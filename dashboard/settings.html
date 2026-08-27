@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Settings - PureNest</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#2E8B72', dark: '#1E6B56', light: '#E8F5F0' },
+            secondary: { DEFAULT: '#F2B866', dark: '#D99B48', light: '#FEF7EE' },
+            surface: { DEFAULT: '#FFFFFF', alt: '#F1F4F1', dark: '#172220' },
+            background: { DEFAULT: '#F7F8F5', dark: '#101817' }
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+</head>
+<body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] antialiased">
+
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar p-5">
+      <div class="flex flex-col gap-2 pb-6 mb-6 border-b border-border">
+        <a href="index.html" class="inline-block">
+          <img src="../assets/images/logo.png" alt="PureNest Housekeeping" class="site-brand-logo-sidebar logo-light">
+          <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo-sidebar logo-dark">
+        </a>
+        <span class="inline-block px-2 py-0.5 rounded-md bg-primary/10 text-primary dark:text-[#34D399] text-[10px] tracking-widest uppercase font-bold w-max">Client Portal</span>
+      </div>
+      <nav class="flex-1 space-y-1 overflow-y-auto">
+        <a href="index.html" class="dashboard-nav-item"><i data-lucide="layout-dashboard" class="w-5 h-5"></i> Overview</a>
+        <a href="book-cleaning.html" class="dashboard-nav-item"><i data-lucide="plus-circle" class="w-5 h-5"></i> Book Cleaning</a>
+        <a href="bookings.html" class="dashboard-nav-item"><i data-lucide="calendar" class="w-5 h-5"></i> My Bookings</a>
+        <a href="cleaner-tracking.html" class="dashboard-nav-item"><i data-lucide="map-pin" class="w-5 h-5"></i> Cleaner Tracking</a>
+        <a href="reviews.html" class="dashboard-nav-item"><i data-lucide="star" class="w-5 h-5"></i> Reviews & Ratings</a>
+        <a href="invoices.html" class="dashboard-nav-item"><i data-lucide="file-text" class="w-5 h-5"></i> Invoices & Receipts</a>
+        <a href="profile.html" class="dashboard-nav-item"><i data-lucide="user" class="w-5 h-5"></i> Profile & Home</a>
+        <a href="notifications.html" class="dashboard-nav-item"><i data-lucide="bell" class="w-5 h-5"></i> Notifications</a>
+        <a href="settings.html" class="dashboard-nav-item active"><i data-lucide="settings" class="w-5 h-5"></i> Settings</a>
+      </nav>
+      <div class="pt-4 border-t border-border space-y-2">
+        <a href="../index.html" class="dashboard-nav-item text-xs text-text-muted"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Website</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main p-6 lg:p-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-8 border-b border-border">
+        <div>
+          <h1 class="text-2xl lg:text-3xl font-heading font-extrabold">Account Settings & Preferences</h1>
+          <p class="text-xs text-text-muted mt-1">Configure language, dark/light theme, SMS alerts, and security</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted text-xs font-bold transition-colors" title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+          <button class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted transition-colors" title="Toggle Dark/Light Mode">
+            <i data-lucide="sun" class="icon-sun w-5 h-5" style="display:none;"></i>
+            <i data-lucide="moon" class="icon-moon w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="max-w-3xl space-y-8">
+        <!-- Appearance & Language -->
+        <div class="card-clean p-6">
+          <h3 class="font-heading font-bold text-lg mb-4">Interface Preferences</h3>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <strong class="block text-sm">Theme Appearance</strong>
+                <span class="text-xs text-text-muted">Toggle between daylight and ambient dark mode</span>
+              </div>
+              <button class="theme-toggle-btn btn btn-outline btn-sm">
+                <i data-lucide="moon" class="icon-moon w-4 h-4 mr-1"></i> Switch Theme
+              </button>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-border">
+              <div>
+                <strong class="block text-sm">Layout Orientation (RTL)</strong>
+                <span class="text-xs text-text-muted">Toggle right-to-left layout</span>
+              </div>
+              <button class="rtl-toggle-btn btn btn-outline btn-sm"><span class="rtl-label">Toggle RTL</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security & Password -->
+        <div class="card-clean p-6">
+          <h3 class="font-heading font-bold text-lg mb-4">Security & Password</h3>
+          <form data-validate="true" class="space-y-4">
+            <div class="form-group mb-0">
+              <label class="form-label text-xs">Current Password</label>
+              <input type="password" class="form-input text-sm" placeholder="••••••••" required>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="form-group mb-0">
+                <label class="form-label text-xs">New Password</label>
+                <input type="password" class="form-input text-sm" placeholder="••••••••" required>
+              </div>
+              <div class="form-group mb-0">
+                <label class="form-label text-xs">Confirm New Password</label>
+                <input type="password" class="form-input text-sm" placeholder="••••••••" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Update Password</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../assets/js/validation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

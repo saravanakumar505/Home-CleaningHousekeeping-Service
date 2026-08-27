@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bespoke Sanctuary Care - PureNest Editorial Housekeeping</title>
+  <meta name="description"
+    content="Editorial residential housekeeping for refined homes. Curated housekeeping routines, trusted staff, and holistic non-toxic products.">
+  <link rel="canonical" href="https://purenest.example.com/pages/home2.html">
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#2E8B72', dark: '#1E6B56', light: '#E8F5F0' },
+            secondary: { DEFAULT: '#F2B866', dark: '#D99B48', light: '#FEF7EE' },
+            surface: { DEFAULT: '#FFFFFF', alt: '#F1F4F1', dark: '#172220' },
+            background: { DEFAULT: '#F7F8F5', dark: '#101817' }
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <!-- Immediate Theme Engine -->
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+</head>
+
+<body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] antialiased flex flex-col min-h-screen">
+
+  <!-- =========================================================================
+       GLOBAL NAVBAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="site-container flex items-center justify-between py-4">
+      <!-- Logo -->
+      <a href="../index.html" class="flex items-center group">
+        <img src="../assets/images/logo.png" alt="PureNest Housekeeping" class="site-brand-logo logo-light">
+        <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo logo-dark">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-1">
+        <div class="nav-dropdown">
+          <button class="nav-link active font-medium">
+            Home <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="../index.html" class="dropdown-item"><i data-lucide="home" class="w-4 h-4 text-primary"></i> Home 1
+              (Residential)</a>
+            <a href="home2.html" class="dropdown-item active"><i data-lucide="layout-grid"
+                class="w-4 h-4 text-secondary"></i> Home 2 (Editorial Care)</a>
+          </div>
+        </div>
+
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="how-it-works.html" class="nav-link">Process</a>
+        <a href="coverage.html" class="nav-link">Coverage</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-link">
+            Dashboard <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="../dashboard/index.html" class="dropdown-item"><i data-lucide="user"
+                class="w-4 h-4 text-primary"></i> Customer Portal</a>
+            <a href="../admin/index.html" class="dropdown-item"><i data-lucide="shield-check"
+                class="w-4 h-4 text-secondary"></i> Admin Console</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="hidden lg:flex items-center gap-3">
+        <button
+          class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors text-xs font-bold"
+          title="Toggle RTL">
+          <span class="rtl-label">RTL</span>
+        </button>
+        <button
+          class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors"
+          title="Toggle Dark/Light Mode">
+          <i data-lucide="sun" class="icon-sun w-5 h-5" style="display:none;"></i>
+          <i data-lucide="moon" class="icon-moon w-5 h-5"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+        <a href="../dashboard/book-cleaning.html" class="btn btn-primary btn-sm">
+          <i data-lucide="calendar" class="w-4 h-4"></i> Book Now
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle lg:hidden p-2 rounded-lg border border-border text-text-main hover:text-primary"
+        aria-label="Open Navigation Menu" aria-expanded="false">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer p-6">
+    <div class="flex items-center justify-between pb-4 border-b border-border">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+        </div>
+        <span class="font-heading font-bold text-lg text-primary">PureNest</span>
+      </div>
+      <button class="mobile-drawer-close p-2 text-text-muted hover:text-text-main">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1 py-4">
+      <a href="../index.html" class="nav-link">Home 1 (Residential)</a>
+      <a href="home2.html" class="nav-link active">Home 2 (Editorial Care)</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="how-it-works.html" class="nav-link">Process</a>
+      <a href="coverage.html" class="nav-link">Coverage Territory</a>
+      <a href="blog.html" class="nav-link">Blog & Tips</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="border-t border-border my-2 pt-2">
+        <a href="../dashboard/index.html" class="nav-link text-primary font-semibold">Customer Dashboard</a>
+        <a href="../admin/index.html" class="nav-link text-secondary font-semibold">Admin Dashboard</a>
+      </div>
+    </nav>
+    <div class="mt-auto pt-4 border-t border-border flex flex-col gap-3">
+      <div class="flex items-center justify-between">
+        <button class="rtl-toggle-btn btn btn-outline btn-sm w-1/2 mr-2"><span class="rtl-label">RTL</span></button>
+        <button class="theme-toggle-btn btn btn-outline btn-sm w-1/2">
+          <i data-lucide="moon" class="icon-moon w-4 h-4 mr-1"></i> Theme
+        </button>
+      </div>
+      <a href="../dashboard/book-cleaning.html" class="btn btn-primary w-full">Book a Cleaning</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       SECTION 01: EDITORIAL SPLIT HERO
+       ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-[#18211F] text-white relative overflow-hidden">
+    <div class="absolute -top-32 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-20 w-80 h-80 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="site-container relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 animate-fade-up">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-secondary text-xs font-bold tracking-widest uppercase mb-6">
+            <i data-lucide="sparkles" class="w-4 h-4"></i> The Art of Pristine Living
+          </div>
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight leading-[1.08] mb-6 text-white">
+            Bespoke Housekeeping for Refined Sanctuaries.
+          </h1>
+          <p class="text-lg text-white/80 max-w-xl mb-8 leading-relaxed">
+            Elevate your home environment with vetted, dedicated housekeepers who understand luxury materials, delicate
+            surfaces, and discreet hospitality.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 mb-10">
+            <a href="../dashboard/book-cleaning.html" class="btn btn-secondary btn-lg font-bold shadow-xl">
+              <i data-lucide="calendar" class="w-5 h-5"></i> Reserve Your Housekeeper
+            </a>
+            <a href="services.html" class="btn btn-outline text-white border-white/30 hover:bg-white/10 btn-lg">
+              Explore Our Portfolio <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Editorial Trust Metrics -->
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/15">
+            <div>
+              <div class="font-heading font-extrabold text-2xl text-secondary">100%</div>
+              <div class="text-xs text-white/70 mt-0.5">W2 Full-Time Staff</div>
+            </div>
+            <div>
+              <div class="font-heading font-extrabold text-2xl text-secondary">4.98★</div>
+              <div class="text-xs text-white/70 mt-0.5">Verified Client Rating</div>
+            </div>
+            <div>
+              <div class="font-heading font-extrabold text-2xl text-secondary">80 Hrs</div>
+              <div class="text-xs text-white/70 mt-0.5">Academy Certified</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20">
+            <img src="../assets/images/hero/home2-hero.webp" alt="Refined Living Space"
+              class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+          </div>
+
+          <!-- Floating Badge -->
+          <div
+            class="card-floating p-4 absolute -bottom-6 -left-6 max-w-xs shadow-xl animate-float hidden sm:flex items-center gap-3 text-text-main dark:text-white">
+            <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white flex-shrink-0">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-xs">Insured to $2,000,000</div>
+              <div class="text-[11px] text-gray-400 font-bold">Bonded & Verified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 02: INSTANT ESTIMATE & DISPATCH BAR
+       ========================================================================= -->
+  <section class="py-8 bg-surface dark:bg-surface-dark border-b border-border shadow-sm">
+    <div class="site-container">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-12 h-12 rounded-xl bg-primary-light text-primary flex items-center justify-center flex-shrink-0">
+            <i data-lucide="calendar" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-heading font-bold text-base">Quick Concierge Booking</h4>
+            <p class="text-xs text-text-muted">Same-day inspection & custom house plan available</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 w-full lg:w-auto">
+          <input type="text" placeholder="Your ZIP code" class="form-input text-sm w-36" maxlength="5">
+          <select class="form-select text-sm w-48">
+            <option>Standard Recurring</option>
+            <option selected>Deep Sanitization Reset</option>
+            <option>Move-In Turnover</option>
+            <option>Estate Custom Plan</option>
+          </select>
+          <a href="../dashboard/book-cleaning.html" class="btn btn-primary text-sm whitespace-nowrap">
+            Check Slots <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 03: BRAND PHILOSOPHY (EDITORIAL NARRATIVE)
+       ========================================================================= -->
+  <section class="py-20 bg-background dark:bg-background-dark">
+    <div class="site-container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl overflow-hidden shadow-xl border border-border">
+            <img src="../assets/images/about/mission.webp" alt="PureNest Sanctuary Cleaning"
+              class="w-full h-auto object-cover">
+          </div>
+        </div>
+        <div class="lg:col-span-6 animate-fade-up">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest">Our Philosophy</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2 mb-6">
+            Where Quiet Luxury Meets Clinical Sanitization
+          </h2>
+          <p class="text-text-muted leading-relaxed mb-4">
+            We reject the gig-economy model of transactional rushed cleans. Your residence is an intimate personal
+            sanctuary that deserves consistent, discreet, and highly trained stewards.
+          </p>
+          <p class="text-text-muted leading-relaxed mb-6">
+            By assigning dedicated housekeepers, utilizing hospital-grade HEPA air purifiers, and employing certified
+            botanical cleaning formulas, we create an atmosphere of restorative calm every time you open your front
+            door.
+          </p>
+          <div class="grid grid-cols-2 gap-4 pt-4 border-t border-border">
+            <div>
+              <h4 class="font-heading font-bold text-base text-primary">Dedicated Personnel</h4>
+              <p class="text-xs text-text-muted mt-1">The same familiar face every appointment</p>
+            </div>
+            <div>
+              <h4 class="font-heading font-bold text-base text-secondary-dark">Non-Toxic Formulations</h4>
+              <p class="text-xs text-text-muted mt-1">100% kid, pet, and allergy-friendly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 04: SERVICE CATEGORIES & CARE TIERS
+       ========================================================================= -->
+  <section class="py-20 bg-surface dark:bg-surface-dark border-t border-border">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Our Care Tiers</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2">Curated Housekeeping Solutions</h2>
+        <p class="text-text-muted mt-3">Tailored cadences and deep restoration programs for residences of all scales.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card-clean p-8 group flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-2xl overflow-hidden mb-6">
+              <img src="../assets/images/services/recurring-cleaning.webp" alt="Recurring Care"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <span class="badge badge-primary mb-2">Automated Stewardship</span>
+            <h3 class="text-xl font-heading font-bold mb-2">Dedicated Weekly Care</h3>
+            <p class="text-sm text-text-muted mb-6">Complete maintenance of your entire estate on fixed days with your
+              chosen housekeeper.</p>
+          </div>
+          <a href="service-details.html" class="btn btn-outline btn-sm w-full">Explore Tier Details</a>
+        </div>
+
+        <div class="card-clean p-8 group flex flex-col justify-between border-2 border-primary shadow-xl">
+          <div>
+            <div class="h-48 rounded-2xl overflow-hidden mb-6">
+              <img src="../assets/images/services/deep-cleaning.webp" alt="Deep Sanitization"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <span class="badge badge-warning mb-2">Top Recommendation</span>
+            <h3 class="text-xl font-heading font-bold mb-2">Restorative Deep Reset</h3>
+            <p class="text-sm text-text-muted mb-6">Comprehensive scrub of baseboards, crown moldings, tile grout, range
+              hoods, and window trims.</p>
+          </div>
+          <a href="service-details.html" class="btn btn-primary btn-sm w-full">Explore Tier Details</a>
+        </div>
+
+        <div class="card-clean p-8 group flex flex-col justify-between">
+          <div>
+            <div class="h-48 rounded-2xl overflow-hidden mb-6">
+              <img src="../assets/images/services/Move-In Cleaning.png" alt="Relocation Clean"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <span class="badge badge-success mb-2">Deposit Shield</span>
+            <h3 class="text-xl font-heading font-bold mb-2">Relocation & Turnover</h3>
+            <p class="text-sm text-text-muted mb-6">Empty space sterilization for newly purchased homes or lease
+              departures ensuring total purity.</p>
+          </div>
+          <a href="service-details.html" class="btn btn-outline btn-sm w-full">Explore Tier Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 05: RECURRING MEMBERSHIP SUBSCRIPTIONS
+       ========================================================================= -->
+  <section class="py-20 bg-background dark:bg-background-dark">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Recurring Memberships</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2">Effortless Housekeeping Cadences</h2>
+        <p class="text-text-muted mt-3">Select your preferred rhythm and unlock dedicated cleaner priority and locked-in
+          savings.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Weekly -->
+        <div class="card-clean p-8 flex flex-col justify-between">
+          <div>
+            <span class="badge badge-primary mb-3">Weekly VIP</span>
+            <h3 class="font-heading font-bold text-2xl mb-1">Weekly Stewardship</h3>
+            <p class="text-xs text-text-muted mb-6">For executive homes & active family residences</p>
+            <div class="text-3xl font-heading font-extrabold text-primary mb-6">20% Discount <span
+                class="text-xs font-normal text-text-muted block mt-1">on every scheduled visit</span></div>
+            <ul class="space-y-3 text-sm text-text-muted mb-8">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Dedicated
+                primary housekeeper</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 1 Free
+                specialized appliance add-on / mo</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Priority
+                weekend time slots</li>
+            </ul>
+          </div>
+          <a href="../dashboard/book-cleaning.html" class="btn btn-outline w-full">Select Weekly</a>
+        </div>
+
+        <!-- Bi-Weekly -->
+        <div
+          class="card-clean p-8 flex flex-col justify-between border-2 border-primary shadow-2xl bg-surface dark:bg-surface-dark relative">
+
+          <div>
+            <span class="badge badge-warning mb-3">Bi-Weekly Rhythm</span>
+            <h3 class="font-heading font-bold text-2xl mb-1">Bi-Weekly Balance</h3>
+            <p class="text-xs text-text-muted mb-6">The ideal 14-day recurring reset</p>
+            <div class="text-3xl font-heading font-extrabold text-primary mb-6">15% Discount <span
+                class="text-xs font-normal text-text-muted block mt-1">on alternate week cadence</span></div>
+            <ul class="space-y-3 text-sm text-text-muted mb-8">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Dedicated
+                primary housekeeper</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Rollover
+                cleaning credits</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Free key
+                holder secure lockbox</li>
+            </ul>
+          </div>
+          <a href="../dashboard/book-cleaning.html" class="btn btn-primary w-full">Select Bi-Weekly</a>
+        </div>
+
+        <!-- Monthly -->
+        <div class="card-clean p-8 flex flex-col justify-between">
+          <div>
+            <span class="badge badge-info mb-3">Monthly Deep</span>
+            <h3 class="font-heading font-bold text-2xl mb-1">Monthly Deep Reset</h3>
+            <p class="text-xs text-text-muted mb-6">For compact suites & low-traffic spaces</p>
+            <div class="text-3xl font-heading font-extrabold text-primary mb-6">10% Discount <span
+                class="text-xs font-normal text-text-muted block mt-1">on monthly cadence</span></div>
+            <ul class="space-y-3 text-sm text-text-muted mb-8">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Comprehensive
+                top-to-bottom scrub</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 50-point
+                audit inspection report</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Pause or
+                adjust dates anytime</li>
+            </ul>
+          </div>
+          <a href="../dashboard/book-cleaning.html" class="btn btn-outline w-full">Select Monthly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- =========================================================================
+       SECTION 07: 5-STEP EDITORIAL WORKFLOW
+       ========================================================================= -->
+  <section class="py-20 bg-background dark:bg-background-dark border-t border-border">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Protocol</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2">The 5-Step Housekeeping Journey</h2>
+        <p class="text-text-muted mt-3">Seamless execution from digital arrangement to spotless sign-off.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="card-clean p-6 text-center">
+          <div
+            class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center font-heading font-bold text-lg mx-auto mb-4">
+            01</div>
+          <h4 class="font-heading font-bold text-base mb-1">Consultation</h4>
+          <p class="text-xs text-text-muted">Specify home details, square footage, and custom room priorities.</p>
+        </div>
+
+        <div class="card-clean p-6 text-center">
+          <div
+            class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center font-heading font-bold text-lg mx-auto mb-4">
+            02</div>
+          <h4 class="font-heading font-bold text-base mb-1">Staff Pairing</h4>
+          <p class="text-xs text-text-muted">Matched with a certified, background-checked primary housekeeper.</p>
+        </div>
+
+        <div class="card-clean p-6 text-center">
+          <div
+            class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center font-heading font-bold text-lg mx-auto mb-4">
+            03</div>
+          <h4 class="font-heading font-bold text-base mb-1">Live Arrival</h4>
+          <p class="text-xs text-text-muted">Real-time GPS tracking with precise 15-minute arrival notification.</p>
+        </div>
+
+        <div class="card-clean p-6 text-center">
+          <div
+            class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center font-heading font-bold text-lg mx-auto mb-4">
+            04</div>
+          <h4 class="font-heading font-bold text-base mb-1">50-Point Scrub</h4>
+          <p class="text-xs text-text-muted">Systematic execution with color-coded microfiber and HEPA filtration.</p>
+        </div>
+
+        <div class="card-clean p-6 text-center">
+          <div
+            class="w-12 h-12 rounded-2xl bg-secondary-dark text-white flex items-center justify-center font-heading font-bold text-lg mx-auto mb-4">
+            05</div>
+          <h4 class="font-heading font-bold text-base mb-1">Audit & Release</h4>
+          <p class="text-xs text-text-muted">Quality audit completed and digital receipt generated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 08: CLEANER PROFILES SHOWCASE
+       ========================================================================= -->
+  <section class="py-20 bg-surface dark:bg-surface-dark border-t border-border">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Our Professionals</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2">Vetted, Bonded & Highly Rated</h2>
+        <p class="text-text-muted mt-3">Full-time insured employees dedicated to perfection in every room.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card-clean p-6 text-center">
+          <div class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/team-1.webp" alt="Olivia Carter" class="w-full h-full object-cover">
+          </div>
+          <h4 class="font-heading font-bold text-lg">Olivia Carter</h4>
+          <p class="text-xs text-text-muted mb-3">Lead Housekeeper & QC Auditor • 6 Yrs Exp</p>
+          <div class="inline-flex items-center gap-1 text-secondary text-sm font-bold">
+            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i> 5.0 Rating (380+ cleans)
+          </div>
+        </div>
+
+        <div class="card-clean p-6 text-center">
+          <div class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/team-2.webp" alt="Marcus Lee" class="w-full h-full object-cover">
+          </div>
+          <h4 class="font-heading font-bold text-lg">Marcus Lee</h4>
+          <p class="text-xs text-text-muted mb-3">Senior Estate Specialist • 4 Yrs Exp</p>
+          <div class="inline-flex items-center gap-1 text-secondary text-sm font-bold">
+            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i> 4.98 Rating (410+ cleans)
+          </div>
+        </div>
+
+        <div class="card-clean p-6 text-center">
+          <div class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/team-3.webp" alt="Sophia Martin" class="w-full h-full object-cover"
+              loading="lazy">
+          </div>
+          <h4 class="font-heading font-bold text-lg">Sophia Martin</h4>
+          <p class="text-xs text-text-muted mb-3">Eco-Sanitation Lead • 5 Yrs Exp</p>
+          <div class="inline-flex items-center gap-1 text-secondary text-sm font-bold">
+            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i> 4.96 Rating (320+ cleans)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 09: ROOM-BY-ROOM SPECIFICATION SHEET
+       ========================================================================= -->
+  <section class="py-20 bg-background dark:bg-background-dark border-t border-border">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Architectural Audit</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2">Room-by-Room Standards</h2>
+        <p class="text-text-muted mt-3">Exacting standards for kitchens, marble baths, living salons, and sleeping
+          quarters.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card-clean p-0 overflow-hidden group">
+          <div class="h-40 overflow-hidden">
+            <img src="../assets/images/cleaning/wood-floor-buffing.webp" alt="Living Salon Floor Care"
+              class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h4 class="font-heading font-bold text-base mb-3 text-primary">Living Salons</h4>
+            <ul class="space-y-2 text-xs text-text-muted">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i>
+                Baseboards & crown wiped</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> 4-stage
+                HEPA rug extraction</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Hardwood
+                pH-neutral mopped</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i>
+                Upholstery fluffed & aligned</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-clean p-0 overflow-hidden group">
+          <div class="h-40 overflow-hidden">
+            <img src="../assets/images/services/kitchen-cleaning.webp" alt="Gourmet Kitchen Care"
+              class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h4 class="font-heading font-bold text-base mb-3 text-amber-600">Gourmet Kitchen</h4>
+            <ul class="space-y-2 text-xs text-text-muted">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Range
+                hood degreased</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Stone &
+                quartz disinfected</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Chrome
+                sink descaled</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Appliance
+                exteriors polished</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-clean p-0 overflow-hidden group">
+          <div class="h-40 overflow-hidden">
+            <img src="../assets/images/cleaning/shower-grout-scrub.webp" alt="Spa Bathroom Tile Steam"
+              class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h4 class="font-heading font-bold text-base mb-3 text-teal-600">Spa Bathrooms</h4>
+            <ul class="space-y-2 text-xs text-text-muted">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Grout
+                lime-scale scrubbed</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i>
+                Streak-free shower glass</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Toilet
+                medical sterilization</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Fixtures
+                chrome-buffed</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-clean p-0 overflow-hidden group">
+          <div class="h-40 overflow-hidden">
+            <img src="../assets/images/cleaning/bed-making.webp" alt="Sleeping Suites Hospitality Bed Making"
+              class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h4 class="font-heading font-bold text-base mb-3 text-purple-600">Sleeping Suites</h4>
+            <ul class="space-y-2 text-xs text-text-muted">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Crisp
+                linen replacement</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Dust-free
+                nightstands</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Under-bed
+                HEPA vacuum</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-primary"></i> Allergen
+                air purification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 10: SUSTAINABILITY & ECO-CONSCIOUS SUPPLIES
+       ========================================================================= -->
+  <section class="py-20 bg-surface dark:bg-surface-dark border-t border-border">
+    <div class="site-container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest">Purity Guaranteed</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2 mb-4">
+            Zero Harsh Fumes. 100% Plant-Derived Care.
+          </h2>
+          <p class="text-text-muted leading-relaxed mb-6">
+            We strictly forbid corrosive bleaches and petroleum solvents. Our formulations utilize natural plant
+            enzymes, organic essential oil essences, and biodegradable surfactants that are safe for infants and
+            sensitive pets.
+          </p>
+          <div class="space-y-3 text-sm font-semibold">
+            <div class="flex items-center gap-2"><i data-lucide="leaf" class="w-4 h-4 text-emerald-600"></i>
+              Cruelty-Free & Biodegradable Certified</div>
+            <div class="flex items-center gap-2"><i data-lucide="wind" class="w-4 h-4 text-teal-600"></i> 99.97% HEPA
+              Allergen Air Scrubbing</div>
+            <div class="flex items-center gap-2"><i data-lucide="heart" class="w-4 h-4 text-rose-600"></i> Safe for
+              Newborns & Precious Animals</div>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border border-border">
+            <img src="../assets/images/about/eco.webp" alt="Eco supplies" class="w-full h-auto object-cover"
+              loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 11: VERIFIED CUSTOMER STORIES
+       ========================================================================= -->
+  <section class="py-20 bg-background dark:bg-background-dark border-t border-border">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Client Testimonials</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2">What Our Clients Value Most</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card-clean p-8 flex flex-col justify-between">
+          <p class="text-xs text-text-muted leading-relaxed italic mb-6">
+            "The discreet professionalism of PureNest is unmatched. Having Marcus manage our home on Thursdays has
+            transformed our family's weekly calm."
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-border">
+            <img src="../assets/images/team/team-1.webp" alt="Sarah Jenkins"
+              class="w-10 h-10 rounded-full object-cover border border-primary flex-shrink-0" loading="lazy">
+            <div>
+              <strong class="font-heading font-bold text-sm block">Sarah Jenkins</strong>
+              <span class="text-[11px] text-text-muted">Weekly VIP • Beverly Hills</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-clean p-8 flex flex-col justify-between">
+          <p class="text-xs text-text-muted leading-relaxed italic mb-6">
+            "Their deep sanitization protocol restored our limestone bathrooms to showroom condition. Worth every single
+            penny."
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-border">
+            <img src="../assets/images/team/cleaner-02.webp" alt="David Kimball"
+              class="w-10 h-10 rounded-full object-cover border border-secondary flex-shrink-0" loading="lazy">
+            <div>
+              <strong class="font-heading font-bold text-sm block">David Kimball</strong>
+              <span class="text-[11px] text-text-muted">Bi-Weekly Client • Westside</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-clean p-8 flex flex-col justify-between">
+          <p class="text-xs text-text-muted leading-relaxed italic mb-6">
+            "We book PureNest for our move turnovers between executive leases. Never had a single deduction on
+            deposits."
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-border">
+            <img src="../assets/images/team/cleaner-03.webp" alt="Emily Martinez"
+              class="w-10 h-10 rounded-full object-cover border border-emerald-500 flex-shrink-0" loading="lazy">
+            <div>
+              <strong class="font-heading font-bold text-sm block">Emily Martinez</strong>
+              <span class="text-[11px] text-text-muted">Monthly Turnover • Marina Bay</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 12: SERVICE AREAS & TERRITORIES
+       ========================================================================= -->
+  <section class="py-20 bg-surface dark:bg-surface-dark border-t border-border">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Territory Hubs</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2">Private Residences We Service</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card-clean p-5 text-center">
+          <div class="h-36 rounded-xl overflow-hidden mb-3">
+            <img src="../assets/images/locations/downtown.webp" alt="Downtown" class="w-full h-full object-cover">
+          </div>
+          <h4 class="font-heading font-bold text-sm">Downtown High-Rises</h4>
+          <span class="text-xs text-text-muted">Daily Concierge Routes</span>
+        </div>
+
+        <div class="card-clean p-5 text-center">
+          <div class="h-36 rounded-xl overflow-hidden mb-3">
+            <img src="../assets/images/locations/uptown.webp" alt="Uptown" class="w-full h-full object-cover">
+          </div>
+          <h4 class="font-heading font-bold text-sm">Historic Brownstones</h4>
+          <span class="text-xs text-text-muted">Dedicated Housekeepers</span>
+        </div>
+
+        <div class="card-clean p-5 text-center">
+          <div class="h-36 rounded-xl overflow-hidden mb-3">
+            <img src="../assets/images/locations/westside.webp" alt="Westside" class="w-full h-full object-cover">
+          </div>
+          <h4 class="font-heading font-bold text-sm">Westside Coast & Marina</h4>
+          <span class="text-xs text-text-muted">Coastal Care Cadences</span>
+        </div>
+
+        <div class="card-clean p-5 text-center">
+          <div class="h-36 rounded-xl overflow-hidden mb-3">
+            <img src="../assets/images/locations/suburbs.webp" alt="Suburbs" class="w-full h-full object-cover">
+          </div>
+          <h4 class="font-heading font-bold text-sm">Oakridge Hills Estates</h4>
+          <span class="text-xs text-text-muted">Large Property Teams</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 13: 100% SATISFACTION SHIELD
+       ========================================================================= -->
+  <section class="py-16 bg-gradient-to-r from-primary-dark via-primary to-teal-800 text-white">
+    <div class="site-container flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <span class="badge badge-warning mb-2 text-[#18211F]">PureNest Guarantee</span>
+        <h2 class="text-2xl sm:text-3xl font-heading font-extrabold">24-Hour Free Re-Clean Promise</h2>
+        <p class="text-xs sm:text-sm text-white/80 max-w-xl mt-1">If any detail does not meet our 50-point audit, we
+          re-clean within 24 hours at zero extra charge.</p>
+      </div>
+      <a href="../dashboard/book-cleaning.html" class="btn btn-secondary whitespace-nowrap font-bold shadow-lg">Reserve
+        With Confidence</a>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 14: CURATED SPECIALTY ADD-ONS
+       ========================================================================= -->
+  <section class="py-20 bg-background dark:bg-background-dark">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Custom Enhancements</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold mt-2">Bespoke Add-On Treatments</h2>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="card-clean p-4 text-center">
+          <div class="w-10 h-10 rounded-xl bg-primary-light text-primary flex items-center justify-center mx-auto mb-2">
+            <i data-lucide="refrigerator" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-heading font-bold text-xs">Inside Fridge</h4>
+          <span class="text-xs text-primary font-semibold">+$35</span>
+        </div>
+        <div class="card-clean p-4 text-center">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mx-auto mb-2"><i
+              data-lucide="flame" class="w-5 h-5"></i></div>
+          <h4 class="font-heading font-bold text-xs">Inside Oven</h4>
+          <span class="text-xs text-primary font-semibold">+$35</span>
+        </div>
+        <div class="card-clean p-4 text-center">
+          <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center mx-auto mb-2"><i
+              data-lucide="app-window" class="w-5 h-5"></i></div>
+          <h4 class="font-heading font-bold text-xs">Window Panes</h4>
+          <span class="text-xs text-primary font-semibold">+$30</span>
+        </div>
+        <div class="card-clean p-4 text-center">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mx-auto mb-2"><i
+              data-lucide="shirt" class="w-5 h-5"></i></div>
+          <h4 class="font-heading font-bold text-xs">Laundry Care</h4>
+          <span class="text-xs text-primary font-semibold">+$25</span>
+        </div>
+        <div class="card-clean p-4 text-center">
+          <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mx-auto mb-2">
+            <i data-lucide="archive" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-heading font-bold text-xs">Inside Cabinets</h4>
+          <span class="text-xs text-primary font-semibold">+$40</span>
+        </div>
+        <div class="card-clean p-4 text-center">
+          <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center mx-auto mb-2"><i
+              data-lucide="dog" class="w-5 h-5"></i></div>
+          <h4 class="font-heading font-bold text-xs">Pet Fur Deep</h4>
+          <span class="text-xs text-primary font-semibold">+$30</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 15: FAQ ACCORDION
+       ========================================================================= -->
+  <section class="py-20 bg-surface dark:bg-surface-dark border-t border-border">
+    <div class="site-container max-w-3xl">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">Questions Answered</span>
+        <h2 class="text-3xl font-heading font-extrabold mt-2">Frequently Asked Inquiries</h2>
+      </div>
+
+      <div class="accordion-group space-y-4">
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            <span>Will I have the exact same cleaner for each visit?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-5 h-5"></i>
+          </button>
+          <div class="accordion-content">
+            <p class="text-text-muted text-sm leading-relaxed">
+              Yes. For all weekly and bi-weekly recurring clients, we match you with a primary housekeeper who becomes
+              familiar with your home's unique layout and delicate surface preferences.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>What if I need to pause service while traveling?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-5 h-5"></i>
+          </button>
+          <div class="accordion-content">
+            <p class="text-text-muted text-sm leading-relaxed">
+              You can pause or reschedule any recurring appointment with a single tap inside your customer portal up to
+              24 hours in advance with zero penalty fees.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Are cleaners bonded and insured against damages?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-5 h-5"></i>
+          </button>
+          <div class="accordion-content">
+            <p class="text-text-muted text-sm leading-relaxed">
+              Yes, 100%. Every PureNest housekeeper is a bonded W2 employee covered under our comprehensive $2,000,000
+              general liability and property insurance policy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 16: NEWSLETTER
+       ========================================================================= -->
+  <section class="py-16 bg-primary-light/50 dark:bg-[#131F1C] border-t border-border">
+    <div class="site-container max-w-4xl text-center">
+      <span class="text-xs font-bold text-primary uppercase tracking-widest">Exclusive Circle</span>
+      <h2 class="text-2xl sm:text-3xl font-heading font-extrabold mt-2 mb-3">Receive Our Monthly Home Care Journal</h2>
+      <p class="text-text-muted text-sm max-w-xl mx-auto mb-6">Seasonal decluttering blueprints and $25 welcome voucher.
+      </p>
+      <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" data-validate="true">
+        <input type="email" placeholder="Enter your email address" class="form-input text-sm" required>
+        <button type="submit" class="btn btn-primary whitespace-nowrap">Join Circle</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 17: FINAL EDITORIAL CTA
+       ========================================================================= -->
+  <section class="py-20 bg-background dark:bg-background-dark">
+    <div class="site-container">
+      <div class="rounded-3xl bg-[#18211F] text-white p-10 lg:p-16 text-center shadow-2xl">
+        <h2 class="text-3xl sm:text-5xl font-heading font-extrabold mb-6 leading-tight text-white">
+          Reclaim Your Sanctuary Today.
+        </h2>
+        <p class="text-white/80 text-base sm:text-lg mb-8 max-w-xl mx-auto">
+          Experience bespoke residential housekeeping tailored to your exact life rhythm.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="../dashboard/book-cleaning.html" class="btn btn-secondary btn-lg font-bold">
+            <i data-lucide="calendar" class="w-5 h-5"></i> Schedule First Clean
+          </a>
+          <a href="contact.html" class="btn btn-outline text-white border-white/30 hover:bg-white/10 btn-lg">
+            Consult Concierge
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 18: GLOBAL FOOTER
+       ========================================================================= -->
+  <!-- Global Footer -->
+  <footer class="site-footer pt-16 pb-12 bg-[#0E1514] text-white border-t border-gray-800">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-gray-800">
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="../index.html" class="inline-block mb-4">
+            <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo-footer">
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
+            Bespoke residential housekeeping and deep sanitation services designed for modern homeowners seeking calm,
+            pristine living.
+          </p>
+          <div class="flex items-center gap-3">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="Facebook" title="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="Twitter / X" title="Twitter / X">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="LinkedIn" title="LinkedIn">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="services.html" class="footer-link">Standard Cleaning</a></li>
+            <li><a href="service-details.html" class="footer-link">Deep Sanitization</a></li>
+            <li><a href="services.html" class="footer-link">Move-In / Move-Out</a></li>
+            <li><a href="services.html" class="footer-link">Kitchen Deep Clean</a></li>
+            <li><a href="services.html" class="footer-link">Recurring Housekeeping</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="about.html" class="footer-link">About PureNest</a></li>
+            <li><a href="how-it-works.html" class="footer-link">Process & Standards</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing & Plans</a></li>
+            <li><a href="coverage.html" class="footer-link">Coverage Territory</a></li>
+            <li><a href="blog.html" class="footer-link">Home Care Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Concierge Support</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li class="flex items-start gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-primary mt-1"></i>
+              <span>(800) 555-PURE (7873)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-primary mt-1"></i>
+              <span>concierge@purenest.com</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-primary mt-1"></i>
+              <span>Mon–Sat: 7:00 AM – 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <div>&copy; 2026 PureNest Housekeeping Services Inc. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-gray-300">Terms of Service</a>
+          <a href="contact.html" class="hover:text-gray-300">Insurance & Bonding</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/validation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

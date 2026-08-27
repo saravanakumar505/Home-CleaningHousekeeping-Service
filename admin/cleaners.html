@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Housekeepers & Staff Directory - PureNest Admin</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#2E8B72', dark: '#1E6B56', light: '#E8F5F0' },
+            secondary: { DEFAULT: '#F2B866', dark: '#D99B48', light: '#FEF7EE' },
+            surface: { DEFAULT: '#FFFFFF', alt: '#F1F4F1', dark: '#172220' },
+            background: { DEFAULT: '#F7F8F5', dark: '#101817' }
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+</head>
+<body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] antialiased">
+
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar p-5">
+      <div class="flex flex-col gap-2 pb-6 mb-6 border-b border-border">
+        <a href="index.html" class="inline-block">
+          <img src="../assets/images/logo.png" alt="PureNest Housekeeping" class="site-brand-logo-sidebar logo-light">
+          <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo-sidebar logo-dark">
+        </a>
+        <span class="inline-block px-2 py-0.5 rounded-md bg-secondary/20 text-[#D99B48] text-[10px] tracking-widest uppercase font-bold w-max">Admin Console</span>
+      </div>
+      <nav class="flex-1 space-y-1 overflow-y-auto">
+        <a href="index.html" class="dashboard-nav-item"><i data-lucide="layout-dashboard" class="w-5 h-5"></i> Dashboard</a>
+        <a href="bookings.html" class="dashboard-nav-item"><i data-lucide="calendar-check" class="w-5 h-5"></i> Bookings & Dispatch</a>
+        <a href="customers.html" class="dashboard-nav-item"><i data-lucide="users" class="w-5 h-5"></i> Customer CRM</a>
+        <a href="cleaners.html" class="dashboard-nav-item active"><i data-lucide="user-check" class="w-5 h-5"></i> Housekeepers</a>
+        <a href="services.html" class="dashboard-nav-item"><i data-lucide="sparkles" class="w-5 h-5"></i> Services Catalog</a>
+        <a href="pricing.html" class="dashboard-nav-item"><i data-lucide="tag" class="w-5 h-5"></i> Pricing & Rules</a>
+        <a href="reviews.html" class="dashboard-nav-item"><i data-lucide="star" class="w-5 h-5"></i> Review Moderation</a>
+        <a href="payments.html" class="dashboard-nav-item"><i data-lucide="credit-card" class="w-5 h-5"></i> Payments & Ledger</a>
+        <a href="messages.html" class="dashboard-nav-item"><i data-lucide="message-square" class="w-5 h-5"></i> Concierge Inbox</a>
+        <a href="coverage.html" class="dashboard-nav-item"><i data-lucide="map" class="w-5 h-5"></i> Coverage & ZIPs</a>
+        <a href="reports.html" class="dashboard-nav-item"><i data-lucide="file-bar-chart" class="w-5 h-5"></i> Reports & Export</a>
+        <a href="analytics.html" class="dashboard-nav-item"><i data-lucide="trending-up" class="w-5 h-5"></i> Analytics</a>
+        <a href="settings.html" class="dashboard-nav-item"><i data-lucide="sliders" class="w-5 h-5"></i> System Settings</a>
+      </nav>
+      <div class="pt-4 border-t border-border space-y-2">
+        <a href="../index.html" class="dashboard-nav-item text-xs text-text-muted"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Website</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main p-6 lg:p-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-8 border-b border-border">
+        <div>
+          <h1 class="text-2xl lg:text-3xl font-heading font-extrabold">Housekeeper & Staff Directory</h1>
+          <p class="text-xs text-text-muted mt-1">Manage full-time certified cleaning specialists, performance metrics, and field schedules</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted text-xs font-bold transition-colors" title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+          <button class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted transition-colors" title="Toggle Dark/Light Mode">
+            <i data-lucide="sun" class="icon-sun w-5 h-5" style="display:none;"></i>
+            <i data-lucide="moon" class="icon-moon w-5 h-5"></i>
+          </button>
+          <button class="btn btn-primary btn-sm" onclick="window.showToast('Add cleaner drawer opened.', 'info')"><i data-lucide="user-plus" class="w-4 h-4"></i> Onboard New Cleaner</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Cleaner Card 1 -->
+        <div class="card-clean p-6 text-center">
+          <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/team-2.webp" alt="Marcus Lee" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-1">Marcus Lee</h3>
+          <p class="text-xs text-text-muted mb-2">Senior Residential Pro</p>
+          <div class="flex justify-center items-center gap-1 text-secondary text-xs font-bold mb-4">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-secondary"></i> 4.98 Rating (412 cleans)
+          </div>
+          <div class="p-2.5 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs mb-4">
+            <div class="flex justify-between py-1"><span>Current:</span><strong class="text-primary font-bold">En Route</strong></div>
+            <div class="flex justify-between py-1"><span>Today's Jobs:</span><strong>4 Cleans</strong></div>
+          </div>
+          <button class="btn btn-outline btn-sm w-full" onclick="window.showToast('Marcus Lee profile opened.', 'info')">View Schedule</button>
+        </div>
+
+        <!-- Cleaner Card 2 -->
+        <div class="card-clean p-6 text-center">
+          <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/team-1.webp" alt="Olivia Carter" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-1">Olivia Carter</h3>
+          <p class="text-xs text-text-muted mb-2">Lead Quality Auditor</p>
+          <div class="flex justify-center items-center gap-1 text-secondary text-xs font-bold mb-4">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-secondary"></i> 5.0 Rating (380 cleans)
+          </div>
+          <div class="p-2.5 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs mb-4">
+            <div class="flex justify-between py-1"><span>Current:</span><strong class="text-emerald-600 font-bold">Cleaning</strong></div>
+            <div class="flex justify-between py-1"><span>Today's Jobs:</span><strong>3 Cleans</strong></div>
+          </div>
+          <button class="btn btn-outline btn-sm w-full" onclick="window.showToast('Olivia Carter profile opened.', 'info')">View Schedule</button>
+        </div>
+
+        <!-- Cleaner Card 3 -->
+        <div class="card-clean p-6 text-center">
+          <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/team-3.webp" alt="Sophia Martin" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-1">Sophia Martin</h3>
+          <p class="text-xs text-text-muted mb-2">Sanitation Lead Trainer</p>
+          <div class="flex justify-center items-center gap-1 text-secondary text-xs font-bold mb-4">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-secondary"></i> 4.96 Rating (320 cleans)
+          </div>
+          <div class="p-2.5 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs mb-4">
+            <div class="flex justify-between py-1"><span>Current:</span><strong class="text-teal-600 font-bold">Available</strong></div>
+            <div class="flex justify-between py-1"><span>Today's Jobs:</span><strong>2 Cleans</strong></div>
+          </div>
+          <button class="btn btn-outline btn-sm w-full" onclick="window.showToast('Sophia Martin profile opened.', 'info')">View Schedule</button>
+        </div>
+
+        <!-- Cleaner Card 4 -->
+        <div class="card-clean p-6 text-center">
+          <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/cleaner-04.webp" alt="Daniel Wilson" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-1">Daniel Wilson</h3>
+          <p class="text-xs text-text-muted mb-2">Floor & Carpet Specialist</p>
+          <div class="flex justify-center items-center gap-1 text-secondary text-xs font-bold mb-4">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-secondary"></i> 4.97 Rating (290 cleans)
+          </div>
+          <div class="p-2.5 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs mb-4">
+            <div class="flex justify-between py-1"><span>Current:</span><strong class="text-amber-600 font-bold">In Transit</strong></div>
+            <div class="flex justify-between py-1"><span>Today's Jobs:</span><strong>3 Cleans</strong></div>
+          </div>
+          <button class="btn btn-outline btn-sm w-full" onclick="window.showToast('Daniel Wilson profile opened.', 'info')">View Schedule</button>
+        </div>
+
+        <!-- Cleaner Card 5 -->
+        <div class="card-clean p-6 text-center">
+          <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/cleaner-05.webp" alt="Elena Rostova" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-1">Elena Rostova</h3>
+          <p class="text-xs text-text-muted mb-2">Move & Turnover Lead</p>
+          <div class="flex justify-center items-center gap-1 text-secondary text-xs font-bold mb-4">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-secondary"></i> 4.99 Rating (340 cleans)
+          </div>
+          <div class="p-2.5 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs mb-4">
+            <div class="flex justify-between py-1"><span>Current:</span><strong class="text-teal-600 font-bold">Available</strong></div>
+            <div class="flex justify-between py-1"><span>Today's Jobs:</span><strong>2 Cleans</strong></div>
+          </div>
+          <button class="btn btn-outline btn-sm w-full" onclick="window.showToast('Elena Rostova profile opened.', 'info')">View Schedule</button>
+        </div>
+
+        <!-- Cleaner Card 6 -->
+        <div class="card-clean p-6 text-center">
+          <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img src="../assets/images/team/cleaner-06.webp" alt="Liam Vance" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <h3 class="font-heading font-bold text-lg mb-1">Liam Vance</h3>
+          <p class="text-xs text-text-muted mb-2">High-Rise Suite Specialist</p>
+          <div class="flex justify-center items-center gap-1 text-secondary text-xs font-bold mb-4">
+            <i data-lucide="star" class="w-3.5 h-3.5 fill-secondary"></i> 4.95 Rating (260 cleans)
+          </div>
+          <div class="p-2.5 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs mb-4">
+            <div class="flex justify-between py-1"><span>Current:</span><strong class="text-emerald-600 font-bold">Cleaning</strong></div>
+            <div class="flex justify-between py-1"><span>Today's Jobs:</span><strong>4 Cleans</strong></div>
+          </div>
+          <button class="btn btn-outline btn-sm w-full" onclick="window.showToast('Liam Vance profile opened.', 'info')">View Schedule</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

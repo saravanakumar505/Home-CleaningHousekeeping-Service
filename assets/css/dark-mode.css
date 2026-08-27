@@ -1,0 +1,242 @@
+/* ==========================================================================
+   PURENEST / LUMINA - DARK MODE STYLES (dark-mode.css)
+   Full theme adaptation for Public, Dashboard, and Admin interfaces
+   ========================================================================== */
+
+html.dark {
+  --background: #101817;
+  --surface: #172220;
+  --surface-alt: #1E2D2A;
+  --surface-card: #172220;
+
+  --text-main: #F4F7F5;
+  --text-muted: #A3B5B0;
+  --text-light: #70847F;
+
+  --border: #263834;
+  --border-light: #1D2B28;
+  --border-focus: #34D399;
+
+  --primary-light: #15332B;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.7);
+
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #101817;
+  color: #F4F7F5;
+}
+
+/* Header */
+html.dark .site-header {
+  background-color: rgba(16, 24, 23, 0.95);
+  border-color: #263834;
+}
+
+html.dark .site-header.scrolled {
+  background-color: rgba(23, 34, 32, 0.98);
+}
+
+/* Hero Section Dark Mode Gradients & Text Visibility */
+html.dark section[class*="from-primary-light"],
+html.dark section[class*="from-surface"],
+html.dark section[class*="via-background"],
+html.dark .hero-section {
+  background: linear-gradient(180deg, #162421 0%, #101817 100%) !important;
+}
+
+html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 {
+  color: #F4F7F5;
+}
+
+html.dark p,
+html.dark .text-text-muted {
+  color: #A3B5B0;
+}
+
+/* Buttons in Dark Mode */
+html.dark .btn-outline {
+  color: #F4F7F5 !important;
+  border-color: #38504B !important;
+  background-color: rgba(23, 34, 32, 0.75) !important;
+  backdrop-filter: blur(8px);
+}
+
+html.dark .btn-outline:hover {
+  border-color: #34D399 !important;
+  color: #34D399 !important;
+  background-color: rgba(46, 139, 114, 0.25) !important;
+}
+
+html.dark .btn-white {
+  background-color: #1E2D2A;
+  color: #F4F7F5;
+  border-color: #263834;
+}
+
+html.dark .btn-white:hover {
+  background-color: #263834;
+}
+
+/* Cards & Surfaces */
+html.dark .card-clean,
+html.dark .card-floating,
+html.dark .metric-card {
+  background: #172220;
+  border-color: #263834;
+  color: #F4F7F5;
+}
+
+html.dark .card-clean:hover,
+html.dark .metric-card:hover {
+  border-color: #2E8B72;
+}
+
+/* Form Controls */
+html.dark .form-input,
+html.dark .form-select,
+html.dark .form-textarea {
+  background-color: #1E2D2A;
+  border-color: #263834;
+  color: #F4F7F5;
+}
+
+html.dark .form-input:focus,
+html.dark .form-select:focus,
+html.dark .form-textarea:focus {
+  border-color: #34D399;
+  background-color: #1A2624;
+}
+
+html.dark .form-input::placeholder,
+html.dark .form-textarea::placeholder {
+  color: #617772;
+}
+
+/* Dropdowns & Navigation */
+html.dark .dropdown-menu,
+html.dark .mobile-drawer {
+  background-color: #172220;
+  border-color: #263834;
+}
+
+html.dark .dropdown-item {
+  color: #D1DED9;
+}
+
+html.dark .dropdown-item:hover,
+html.dark .dropdown-item.active {
+  background-color: #15332B;
+  color: #34D399;
+}
+
+html.dark .nav-link {
+  color: #D1DED9;
+}
+
+html.dark .nav-link:hover,
+html.dark .nav-link.active {
+  color: #34D399;
+}
+
+/* Trust Stats & Counters */
+html.dark .bg-surface-alt,
+html.dark .bg-surface {
+  background-color: #172220;
+}
+
+html.dark .border-border {
+  border-color: #263834;
+}
+
+/* Table Custom */
+html.dark .table-responsive {
+  background-color: #172220;
+  border-color: #263834;
+}
+
+html.dark .table-custom th {
+  background-color: #1E2D2A;
+  color: #A3B5B0;
+  border-color: #263834;
+}
+
+html.dark .table-custom td {
+  border-color: #263834;
+  color: #F4F7F5;
+}
+
+html.dark .table-custom tr:hover td {
+  background-color: #1E2D2A;
+}
+
+/* Dashboard Sidebar */
+html.dark .dashboard-sidebar {
+  background-color: #172220;
+  border-color: #263834;
+}
+
+html.dark .dashboard-nav-item {
+  color: #A3B5B0;
+}
+
+html.dark .dashboard-nav-item:hover,
+html.dark .dashboard-nav-item.active {
+  background-color: #15332B;
+  color: #34D399;
+}
+
+/* Accordion */
+html.dark .accordion-item {
+  background-color: #172220;
+  border-color: #263834;
+}
+
+/* Footer in Dark Mode */
+html.dark .site-footer {
+  background-color: #0A0F0E;
+  border-color: #1E2D2A;
+}
+
+/* Stepper Wizard Nodes */
+html.dark .step-indicator-node {
+  background-color: #172220;
+  border-color: #263834;
+  color: #A3B5B0;
+}
+
+html.dark .step-indicator-node.active {
+  background-color: #2E8B72;
+  border-color: #2E8B72;
+  color: #FFFFFF;
+}
+
+/* Chat & Messaging in Dark Mode */
+html.dark .chat-msg-received {
+  background-color: #1E2D2A;
+  color: #F4F7F5;
+  border: 1px solid #263834;
+}
+
+html.dark .chat-msg-sent {
+  background-color: #2E8B72;
+  color: #FFFFFF;
+}
+
+/* Modals & Dialogs */
+html.dark .modal-content {
+  background-color: #172220;
+  border-color: #263834;
+  color: #F4F7F5;
+}
+
+/* Skeleton Loading */
+html.dark .skeleton {
+  background: linear-gradient(90deg, #1E2D2A 25%, #263834 37%, #1E2D2A 63%);
+  background-size: 400% 100%;
+}

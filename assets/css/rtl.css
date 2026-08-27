@@ -1,0 +1,170 @@
+/* ==========================================================================
+   PURENEST / LUMINA - RTL (RIGHT-TO-LEFT) COMPREHENSIVE STYLES (rtl.css)
+   Full bidirectional support for Public Website, Customer Portal & Admin Console
+   ========================================================================== */
+
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Base Typography & Direction */
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Header & Public Navigation */
+html[dir="rtl"] .site-header .site-container {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+html[dir="rtl"] .mobile-drawer {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+html[dir="rtl"] .mobile-drawer.active {
+  transform: translateX(0);
+}
+
+/* Dashboard & Admin Core Layout */
+html[dir="rtl"] .dashboard-sidebar {
+  border-right: none;
+  border-left: 1px solid var(--border);
+}
+
+html[dir="rtl"] .dashboard-nav-item {
+  text-align: right;
+  flex-direction: row;
+}
+
+html[dir="rtl"] .dashboard-nav-item i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Form Controls in RTL */
+html[dir="rtl"] .form-input,
+html[dir="rtl"] .form-select,
+html[dir="rtl"] .form-textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] .form-select {
+  background-position: left 0.75rem center;
+  padding-left: 2.25rem;
+  padding-right: 0.75rem;
+}
+
+html[dir="rtl"] .form-label {
+  text-align: right;
+}
+
+/* Table Bidirectionality */
+html[dir="rtl"] .table-custom {
+  text-align: right;
+}
+
+html[dir="rtl"] .table-custom th,
+html[dir="rtl"] .table-custom td {
+  text-align: right;
+}
+
+/* Metric Cards & KPI Stats */
+html[dir="rtl"] .metric-card {
+  text-align: right;
+}
+
+/* Before / After Slider Badges & Splitter */
+html[dir="rtl"] .ba-badge-before {
+  left: auto;
+  right: 1.25rem;
+}
+
+html[dir="rtl"] .ba-badge-after {
+  right: auto;
+  left: 1.25rem;
+}
+
+html[dir="rtl"] .ba-overlay {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 2px solid #FFFFFF;
+}
+
+html[dir="rtl"] .clean-check-item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* Live Cleaner Tracking & Timeline */
+html[dir="rtl"] .timeline-track {
+  left: auto;
+  right: 1rem;
+}
+
+html[dir="rtl"] .timeline-step-node {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+/* Admin Messaging & Chat Bubbles */
+html[dir="rtl"] .chat-msg-sent {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: right;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+html[dir="rtl"] .chat-msg-received {
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+/* Booking Stepper Wizard */
+html[dir="rtl"] .step-indicator-node {
+  direction: ltr;
+}
+
+/* Buttons with Icons */
+html[dir="rtl"] .btn i:first-child {
+  margin-right: 0;
+  margin-left: 0.35rem;
+}
+
+html[dir="rtl"] .btn i:last-child {
+  margin-left: 0;
+  margin-right: 0.35rem;
+}
+
+/* Badges & Pills */
+html[dir="rtl"] .badge-pill {
+  direction: rtl;
+}
+
+/* Animations */
+html[dir="rtl"] .animate-slide-left {
+  transform: translateX(30px);
+}
+
+html[dir="rtl"] .animate-slide-right {
+  transform: translateX(-30px);
+}
+
+html[dir="rtl"] .rotate-180-rtl {
+  transform: rotate(180deg);
+}

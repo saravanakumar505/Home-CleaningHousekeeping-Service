@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Cleaning Services - PureNest Housekeeping</title>
+  <meta name="description"
+    content="Explore our full catalog of residential cleaning services: standard maintenance, deep cleaning, kitchen sanitization, move-in/out, and recurring housekeeping.">
+  <link rel="canonical" href="https://purenest.example.com/pages/services.html">
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#2E8B72', dark: '#1E6B56', light: '#E8F5F0' },
+            secondary: { DEFAULT: '#F2B866', dark: '#D99B48', light: '#FEF7EE' },
+            surface: { DEFAULT: '#FFFFFF', alt: '#F1F4F1', dark: '#172220' },
+            background: { DEFAULT: '#F7F8F5', dark: '#101817' }
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+</head>
+
+<body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] antialiased flex flex-col min-h-screen">
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="site-container flex items-center justify-between py-4">
+      <a href="../index.html" class="flex items-center group">
+        <img src="../assets/images/logo.png" alt="PureNest Housekeeping" class="site-brand-logo logo-light">
+        <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo logo-dark">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <div class="nav-dropdown">
+          <button class="nav-link font-medium">
+            Home <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="../index.html" class="dropdown-item"><i data-lucide="home" class="w-4 h-4 text-primary"></i> Home 1
+              (Residential)</a>
+            <a href="home2.html" class="dropdown-item"><i data-lucide="layout-grid" class="w-4 h-4 text-secondary"></i>
+              Home 2 (Editorial Care)</a>
+          </div>
+        </div>
+
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="how-it-works.html" class="nav-link">Process</a>
+        <a href="coverage.html" class="nav-link">Coverage</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-link">
+            Dashboard <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="../dashboard/index.html" class="dropdown-item"><i data-lucide="user"
+                class="w-4 h-4 text-primary"></i> Customer Portal</a>
+            <a href="../admin/index.html" class="dropdown-item"><i data-lucide="shield-check"
+                class="w-4 h-4 text-secondary"></i> Admin Console</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <button
+          class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors text-xs font-bold"
+          title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+        <button
+          class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors"
+          title="Toggle Dark/Light Mode">
+          <i data-lucide="sun" class="icon-sun w-5 h-5" style="display:none;"></i>
+          <i data-lucide="moon" class="icon-moon w-5 h-5"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+        <a href="../dashboard/book-cleaning.html" class="btn btn-primary btn-sm"><i data-lucide="calendar"
+            class="w-4 h-4"></i> Book Now</a>
+      </div>
+
+      <button class="mobile-menu-toggle lg:hidden p-2 rounded-lg border border-border text-text-main hover:text-primary"
+        aria-label="Open Navigation Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer p-6">
+    <div class="flex items-center justify-between pb-4 border-b border-border">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white"><i data-lucide="sparkles"
+            class="w-4 h-4"></i></div>
+        <span class="font-heading font-bold text-lg text-primary">PureNest</span>
+      </div>
+      <button class="mobile-drawer-close p-2 text-text-muted"><i data-lucide="x" class="w-6 h-6"></i></button>
+    </div>
+    <nav class="flex flex-col gap-1 py-4">
+      <a href="../index.html" class="nav-link">Home 1 (Residential)</a>
+      <a href="home2.html" class="nav-link">Home 2 (Editorial Care)</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="how-it-works.html" class="nav-link">Process</a>
+      <a href="coverage.html" class="nav-link">Coverage Territory</a>
+      <a href="blog.html" class="nav-link">Blog & Tips</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="border-t border-border my-2 pt-2">
+        <a href="../dashboard/index.html" class="nav-link text-primary font-semibold">Customer Dashboard</a>
+        <a href="../admin/index.html" class="nav-link text-secondary font-semibold">Admin Console</a>
+      </div>
+    </nav>
+    <div class="mt-auto pt-4 border-t border-border flex flex-col gap-3">
+      <div class="flex items-center justify-between">
+        <button class="rtl-toggle-btn btn btn-outline btn-sm w-1/2 mr-2"><span class="rtl-label">RTL</span></button>
+        <button class="theme-toggle-btn btn btn-outline btn-sm w-1/2">
+          <i data-lucide="moon" class="icon-moon w-4 h-4 mr-1"></i> Theme
+        </button>
+      </div>
+      <a href="../dashboard/book-cleaning.html" class="btn btn-primary w-full">Book a Cleaning</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       SERVICES HERO (WITH LARGE BACKGROUND & OVERLAY)
+       ========================================================================= -->
+  <section
+    class="py-16 lg:py-24 hero-section bg-gradient-to-b from-primary-light/40 to-background dark:from-[#172220] dark:to-[#101817] border-b border-border relative overflow-hidden">
+    <div class="site-container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 animate-fade-up">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest">Complete Care Catalog</span>
+          <h1 class="text-4xl sm:text-5xl font-heading font-extrabold mt-3 mb-6 leading-tight">
+            Expert Housekeeping Tailored to Your Home
+          </h1>
+          <p class="text-base sm:text-lg text-text-muted leading-relaxed mb-6">
+            From routine weekly maintenance to deep restorative cleans, move-in preparation, and full estate care, our
+            certified staff delivers absolute purity.
+          </p>
+          <div class="flex items-center gap-4">
+            <a href="../dashboard/book-cleaning.html" class="btn btn-primary">Book Online Now</a>
+            <a href="pricing.html" class="btn btn-outline">View Pricing Plans</a>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-2 border-white/40 group">
+            <img src="../assets/images/hero/services-hero.webp" alt="Professional Cleaning Fleet"
+              class="w-full h-auto object-cover hero-zoom-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- SERVICE GRID (10+ SERVICE CARDS WITH IMAGES & HOVER ZOOM) -->
+  <section class="py-20 bg-background dark:bg-background-dark">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 1. Standard Clean -->
+        <div data-filter-category="residential" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/standard-cleaning.webp" alt="Standard Cleaning"
+              class="w-full h-full object-cover img-zoom-hover">
+            <span class="badge badge-primary absolute top-4 left-4">Popular</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 2-3 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $95</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Standard Residential Clean</h3>
+            <p class="text-sm text-text-muted mb-4">Complete maintenance covering high-touch dusting, floor mopping,
+              sanitizing vanities, and kitchen counters.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 2. Deep Cleaning -->
+        <div data-filter-category="deep" class="card-clean p-0 overflow-hidden group border-2 border-primary shadow-xl">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/deep-cleaning.webp" alt="Deep Cleaning"
+              class="w-full h-full object-cover img-zoom-hover">
+            <span class="badge badge-warning absolute top-4 left-4">Top Recommendation</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 4-6 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $165</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Deep Sanitization Reset</h3>
+            <p class="text-sm text-text-muted mb-4">Meticulous detail cleaning including baseboards, door moldings,
+              lime-scale extraction, and interior window trims.</p>
+            <a href="service-details.html" class="btn btn-primary btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 3. Kitchen Deep Clean -->
+        <div data-filter-category="deep" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/kitchen-cleaning.webp" alt="Kitchen Cleaning"
+              class="w-full h-full object-cover img-zoom-hover">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 2-3 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $120</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Gourmet Kitchen Sanitization</h3>
+            <p class="text-sm text-text-muted mb-4">Complete range hood degreasing, backsplash sterilization, polished
+              chrome faucets, and exterior cabinetry care.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 4. Bathroom Sanitization -->
+        <div data-filter-category="deep" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/bathroom-cleaning.webp" alt="Bathroom Cleaning"
+              class="w-full h-full object-cover img-zoom-hover">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 2 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $110</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Spa-Grade Bathroom Hygiene</h3>
+            <p class="text-sm text-text-muted mb-4">Tile grout descaling, streak-free shower glass treatment, mirror
+              polishing, and medical-grade toilet sterilization.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 5. Move-In Cleaning -->
+        <div data-filter-category="relocation" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/Move-In Cleaning.png" alt="Move-In Cleaning"
+              class="w-full h-full object-cover img-zoom-hover">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 4-5 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $195</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Move-In Pristine Setup</h3>
+            <p class="text-sm text-text-muted mb-4">Sanitizing interior drawers, pantry shelves, closet storage, and all
+              living floors before your furniture arrives.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 6. Move-Out Cleaning -->
+        <div data-filter-category="relocation" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/move-out-cleaning.webp" alt="Move-Out Cleaning"
+              class="w-full h-full object-cover img-zoom-hover">
+            <span class="badge badge-success absolute top-4 left-4">Deposit Shield</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 5-7 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $195</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Move-Out Turnover Clean</h3>
+            <p class="text-sm text-text-muted mb-4">Guaranteed lease turnover checklist covering oven interior, fridge
+              interior, baseboards, and walls.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 7. Recurring Cleaning -->
+        <div data-filter-category="residential" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/recurring-cleaning.webp" alt="Recurring Cleaning"
+              class="w-full h-full object-cover img-zoom-hover">
+            <span class="badge badge-primary absolute top-4 left-4">20% Off</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> Weekly / Bi-Weekly</span>
+              <span class="font-heading font-bold text-primary text-base">From $80/visit</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Dedicated Recurring Care</h3>
+            <p class="text-sm text-text-muted mb-4">Scheduled automatic visits with your preferred primary housekeeper
+              and locked-in VIP member rates.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 8. Apartment Cleaning -->
+        <div data-filter-category="residential" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/apartment-cleaning.webp" alt="Apartment Cleaning"
+              class="w-full h-full object-cover img-zoom-hover">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 1.5-2.5 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $85</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Urban Suite & Condo Care</h3>
+            <p class="text-sm text-text-muted mb-4">Fast, efficient high-rise care tailored for modern condominiums and
+              compact city lofts.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 9. Full Housekeeping -->
+        <div data-filter-category="residential" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/housekeeping.webp" alt="Housekeeping"
+              class="w-full h-full object-cover img-zoom-hover">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 4-8 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $180</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Full Estate Housekeeping</h3>
+            <p class="text-sm text-text-muted mb-4">Comprehensive housekeeping including laundry folding, wardrobe
+              organization, and dish care.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 10. Post-Renovation Clean -->
+        <div data-filter-category="deep" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/post-renovation-cleaning.webp" alt="Post-Renovation Cleaning"
+              class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 6-8 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $230</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Post-Renovation Clean</h3>
+            <p class="text-sm text-text-muted mb-4">Fine drywall dust extraction, adhesive residue cleanup, and HEPA air
+              purification post-remodel.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 11. Window Cleaning -->
+        <div data-filter-category="deep" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/window-cleaning.webp" alt="Window Cleaning"
+              class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 2-3 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $75</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">Window & Track Detailing</h3>
+            <p class="text-sm text-text-muted mb-4">Streak-free interior and exterior window washing, screen washing,
+              and track steam disinfection.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+
+        <!-- 12. Carpet Cleaning -->
+        <div data-filter-category="deep" class="card-clean p-0 overflow-hidden group">
+          <div class="relative h-56 overflow-hidden">
+            <img src="../assets/images/services/carpet-cleaning.webp" alt="Carpet Cleaning"
+              class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+              <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 2-4 Hours</span>
+              <span class="font-heading font-bold text-primary text-base">From $135</span>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2">HEPA Carpet & Rug Extraction</h3>
+            <p class="text-sm text-text-muted mb-4">Hot water micro-extraction, allergen lifting, pet stain
+              neutralization, and wool fiber conditioning.</p>
+            <a href="service-details.html" class="btn btn-outline btn-sm w-full">View Details & Checklist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PRO CLEANING SECTION -->
+  <section class="py-20 bg-surface dark:bg-surface-dark border-t border-border">
+    <div class="site-container">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs font-bold text-primary uppercase tracking-widest">The Professional Edge</span>
+          <h2 class="text-3xl font-heading font-bold mt-2 mb-4">Why Invest in Certified Housekeeping?</h2>
+          <p class="text-text-muted leading-relaxed mb-6">
+            Professional housekeeping goes beyond surface dusting. Our certified team utilizes HEPA air extraction,
+            non-toxic enzymatic bio-cleaners, and strict cross-contamination protocols that preserve your finishes and
+            indoor air quality.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-primary-light text-primary flex items-center justify-center mt-1"><i
+                  data-lucide="clock" class="w-4 h-4"></i></div>
+              <div><strong class="block text-sm">Reclaim 12+ Hours Every Week</strong><span
+                  class="text-xs text-text-muted">Spend your precious weekends with loved ones instead of scrubbing
+                  bathrooms.</span></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-primary-light text-primary flex items-center justify-center mt-1"><i
+                  data-lucide="shield" class="w-4 h-4"></i></div>
+              <div><strong class="block text-sm">Preserve High-End Materials</strong><span
+                  class="text-xs text-text-muted">Safe pH-neutral care for marble countertops, hardwood floors, and
+                  brass fixtures.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl border border-border group">
+          <img src="../assets/images/cleaning/hepa-vacuuming.webp" alt="HEPA Filtration Extraction"
+            class="w-full h-auto object-cover img-zoom-hover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <!-- Global Footer -->
+  <footer class="site-footer pt-16 pb-12 bg-[#0E1514] text-white border-t border-gray-800">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-gray-800">
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="../index.html" class="inline-block mb-4">
+            <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo-footer">
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
+            Bespoke residential housekeeping and deep sanitation services designed for modern homeowners seeking calm,
+            pristine living.
+          </p>
+          <div class="flex items-center gap-3">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="Facebook" title="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="Twitter / X" title="Twitter / X">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="LinkedIn" title="LinkedIn">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="services.html" class="footer-link">Standard Cleaning</a></li>
+            <li><a href="service-details.html" class="footer-link">Deep Sanitization</a></li>
+            <li><a href="services.html" class="footer-link">Move-In / Move-Out</a></li>
+            <li><a href="services.html" class="footer-link">Kitchen Deep Clean</a></li>
+            <li><a href="services.html" class="footer-link">Recurring Housekeeping</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="about.html" class="footer-link">About PureNest</a></li>
+            <li><a href="how-it-works.html" class="footer-link">Process & Standards</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing & Plans</a></li>
+            <li><a href="coverage.html" class="footer-link">Coverage Territory</a></li>
+            <li><a href="blog.html" class="footer-link">Home Care Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Concierge Support</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li class="flex items-start gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-primary mt-1"></i>
+              <span>(800) 555-PURE (7873)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-primary mt-1"></i>
+              <span>concierge@purenest.com</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-primary mt-1"></i>
+              <span>Mon–Sat: 7:00 AM – 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <div>&copy; 2026 PureNest Housekeeping Services Inc. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-gray-300">Terms of Service</a>
+          <a href="contact.html" class="hover:text-gray-300">Insurance & Bonding</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/validation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

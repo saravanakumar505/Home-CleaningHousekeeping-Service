@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Details #PN-9920 - PureNest Housekeeping</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#2E8B72', dark: '#1E6B56', light: '#E8F5F0' },
+            secondary: { DEFAULT: '#F2B866', dark: '#D99B48', light: '#FEF7EE' },
+            surface: { DEFAULT: '#FFFFFF', alt: '#F1F4F1', dark: '#172220' },
+            background: { DEFAULT: '#F7F8F5', dark: '#101817' }
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+</head>
+<body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] antialiased">
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar p-5">
+      <div class="flex flex-col gap-2 pb-6 mb-6 border-b border-border">
+        <a href="index.html" class="inline-block">
+          <img src="../assets/images/logo.png" alt="PureNest Housekeeping" class="site-brand-logo-sidebar logo-light">
+          <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo-sidebar logo-dark">
+        </a>
+        <span class="inline-block px-2 py-0.5 rounded-md bg-primary/10 text-primary dark:text-[#34D399] text-[10px] tracking-widest uppercase font-bold w-max">Client Portal</span>
+      </div>
+
+      <nav class="flex-1 space-y-1 overflow-y-auto">
+        <a href="index.html" class="dashboard-nav-item"><i data-lucide="layout-dashboard" class="w-5 h-5"></i> Overview</a>
+        <a href="book-cleaning.html" class="dashboard-nav-item"><i data-lucide="plus-circle" class="w-5 h-5"></i> Book Cleaning</a>
+        <a href="bookings.html" class="dashboard-nav-item active"><i data-lucide="calendar" class="w-5 h-5"></i> My Bookings</a>
+        <a href="cleaner-tracking.html" class="dashboard-nav-item"><i data-lucide="map-pin" class="w-5 h-5"></i> Cleaner Tracking</a>
+        <a href="reviews.html" class="dashboard-nav-item"><i data-lucide="star" class="w-5 h-5"></i> Reviews & Ratings</a>
+        <a href="invoices.html" class="dashboard-nav-item"><i data-lucide="file-text" class="w-5 h-5"></i> Invoices & Receipts</a>
+        <a href="profile.html" class="dashboard-nav-item"><i data-lucide="user" class="w-5 h-5"></i> Profile & Home</a>
+        <a href="notifications.html" class="dashboard-nav-item"><i data-lucide="bell" class="w-5 h-5"></i> Notifications</a>
+        <a href="settings.html" class="dashboard-nav-item"><i data-lucide="settings" class="w-5 h-5"></i> Settings</a>
+      </nav>
+
+      <div class="pt-4 border-t border-border space-y-2">
+        <a href="../index.html" class="dashboard-nav-item text-xs text-text-muted"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Website</a>
+      </div>
+    </aside>
+
+    <!-- Main Details Content -->
+    <main class="dashboard-main p-6 lg:p-8">
+      <div class="flex items-center gap-2 text-xs text-text-muted mb-4">
+        <a href="bookings.html" class="hover:text-primary">My Bookings</a>
+        <i data-lucide="chevron-right" class="w-3 h-3"></i>
+        <span>Booking #PN-9920</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-8 border-b border-border">
+        <div>
+          <div class="flex items-center gap-3">
+            <h1 class="text-2xl lg:text-3xl font-heading font-extrabold">Booking #PN-9920</h1>
+            <span class="badge badge-warning">Upcoming</span>
+          </div>
+          <p class="text-xs text-text-muted mt-1">Scheduled for Friday, Aug 28, 2026 at 09:00 AM</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted text-xs font-bold transition-colors" title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+          <button class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted transition-colors" title="Toggle Dark/Light Mode">
+            <i data-lucide="sun" class="icon-sun w-5 h-5" style="display:none;"></i>
+            <i data-lucide="moon" class="icon-moon w-5 h-5"></i>
+          </button>
+          <a href="cleaner-tracking.html" class="btn btn-primary btn-sm"><i data-lucide="map-pin" class="w-4 h-4"></i> Track Arrival</a>
+          <button class="btn btn-outline btn-sm" onclick="window.showToast('Download invoice PDF generated.', 'success')"><i data-lucide="download" class="w-4 h-4"></i> Invoice PDF</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Left: Specifications -->
+        <div class="lg:col-span-8 space-y-6">
+          <div class="card-clean p-6">
+            <h3 class="font-heading font-bold text-lg mb-4">Service Breakdown</h3>
+            <div class="space-y-3 text-sm pb-4 mb-4 border-b border-border">
+              <div class="flex justify-between"><span>Package Plan:</span><strong>Standard Recurring Weekly Clean</strong></div>
+              <div class="flex justify-between"><span>Property Size:</span><strong>2 Bedrooms, 2 Bathrooms (~1,450 sqft)</strong></div>
+              <div class="flex justify-between"><span>Address:</span><strong>124 Elmwood Terrace, Apt 4B, 90210</strong></div>
+              <div class="flex justify-between"><span>Special Extras:</span><strong>Inside Refrigerator Sanitization (+$25)</strong></div>
+              <div class="flex justify-between"><span>Entry Protocol:</span><strong>Doorman key desk / Front desk sign-in</strong></div>
+            </div>
+            <div class="flex justify-between text-base font-bold">
+              <span>Total Charge:</span>
+              <span class="text-primary text-xl">$120.00</span>
+            </div>
+          </div>
+
+          <!-- Cleaner Assigned -->
+          <div class="card-clean p-6">
+            <h3 class="font-heading font-bold text-lg mb-4">Assigned Housekeeper</h3>
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary flex-shrink-0">
+                <img src="../assets/images/team/team-2.webp" alt="Marcus Lee" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-base">Marcus Lee</h4>
+                <p class="text-xs text-text-muted mb-1">Senior Residential Specialist • 4.98 Rating</p>
+                <span class="badge badge-success text-[10px]">100% Background Checked</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Status Timeline -->
+        <div class="lg:col-span-4">
+          <div class="card-clean p-6">
+            <h3 class="font-heading font-bold text-base mb-4">Job Status Timeline</h3>
+            <div class="space-y-4 text-xs">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></div>
+                <div><strong>Booking Confirmed</strong><span class="text-text-muted block">Aug 22, 2026 - 10:14 AM</span></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></div>
+                <div><strong>Cleaner Assigned (Marcus)</strong><span class="text-text-muted block">Aug 23, 2026 - 02:30 PM</span></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded-full bg-secondary text-[#18211F] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</div>
+                <div><strong>En Route on Aug 28</strong><span class="text-text-muted block">Expected arrival 09:00 AM</span></div>
+              </div>
+              <div class="flex items-start gap-3 text-text-muted">
+                <div class="w-6 h-6 rounded-full border border-border flex items-center justify-center flex-shrink-0 mt-0.5">4</div>
+                <div><span>50-Point Audit Inspection</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Check-In Pass -->
+          <div class="card-clean p-6 text-center">
+            <h4 class="font-heading font-bold text-sm mb-1">Keyless Arrival QR Pass</h4>
+            <p class="text-[11px] text-text-muted mb-3">Scan upon arrival for instant contact-free entry</p>
+            <div class="w-32 h-32 mx-auto rounded-xl p-2 bg-white border border-border shadow-inner">
+              <img src="../assets/images/dashboard/qr-code.webp" alt="Arrival QR Pass" class="w-full h-full object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Home Care Journal - PureNest Housekeeping</title>
+  <meta name="description" content="Expert housekeeping advice, non-toxic sanitization guides, wardrobe organization techniques, and seasonal cleaning blueprints from PureNest specialists.">
+  <link rel="canonical" href="https://purenest.example.com/pages/blog.html">
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#2E8B72', dark: '#1E6B56', light: '#E8F5F0' },
+            secondary: { DEFAULT: '#F2B866', dark: '#D99B48', light: '#FEF7EE' },
+            surface: { DEFAULT: '#FFFFFF', alt: '#F1F4F1', dark: '#172220' },
+            background: { DEFAULT: '#F7F8F5', dark: '#101817' }
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+</head>
+<body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] antialiased flex flex-col min-h-screen">
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="site-container flex items-center justify-between py-4">
+      <a href="../index.html" class="flex items-center group">
+        <img src="../assets/images/logo.png" alt="PureNest Housekeeping" class="site-brand-logo logo-light">
+        <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo logo-dark">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <div class="nav-dropdown">
+          <button class="nav-link font-medium">
+            Home <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="../index.html" class="dropdown-item"><i data-lucide="home" class="w-4 h-4 text-primary"></i> Home 1 (Residential)</a>
+            <a href="home2.html" class="dropdown-item"><i data-lucide="layout-grid" class="w-4 h-4 text-secondary"></i> Home 2 (Editorial Care)</a>
+          </div>
+        </div>
+
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="how-it-works.html" class="nav-link">Process</a>
+        <a href="coverage.html" class="nav-link">Coverage</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-link">
+            Dashboard <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="../dashboard/index.html" class="dropdown-item"><i data-lucide="user" class="w-4 h-4 text-primary"></i> Customer Portal</a>
+            <a href="../admin/index.html" class="dropdown-item"><i data-lucide="shield-check" class="w-4 h-4 text-secondary"></i> Admin Console</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <button class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors text-xs font-bold" title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+        <button class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors" title="Toggle Dark/Light Mode">
+          <i data-lucide="sun" class="icon-sun w-5 h-5" style="display:none;"></i>
+          <i data-lucide="moon" class="icon-moon w-5 h-5"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+        <a href="../dashboard/book-cleaning.html" class="btn btn-primary btn-sm"><i data-lucide="calendar" class="w-4 h-4"></i> Book Now</a>
+      </div>
+
+      <button class="mobile-menu-toggle lg:hidden p-2 rounded-lg border border-border text-text-main hover:text-primary" aria-label="Open Navigation Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer p-6">
+    <div class="flex items-center justify-between pb-4 border-b border-border">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+        <span class="font-heading font-bold text-lg text-primary">PureNest</span>
+      </div>
+      <button class="mobile-drawer-close p-2 text-text-muted"><i data-lucide="x" class="w-6 h-6"></i></button>
+    </div>
+    <nav class="flex flex-col gap-1 py-4">
+      <a href="../index.html" class="nav-link">Home 1 (Residential)</a>
+      <a href="home2.html" class="nav-link">Home 2 (Editorial Care)</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="how-it-works.html" class="nav-link">Process</a>
+      <a href="coverage.html" class="nav-link">Coverage Territory</a>
+      <a href="blog.html" class="nav-link active">Blog & Tips</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="border-t border-border my-2 pt-2">
+        <a href="../dashboard/index.html" class="nav-link text-primary font-semibold">Customer Dashboard</a>
+        <a href="../admin/index.html" class="nav-link text-secondary font-semibold">Admin Console</a>
+      </div>
+    </nav>
+    <div class="mt-auto pt-4 border-t border-border flex flex-col gap-3">
+      <div class="flex items-center justify-between">
+        <button class="rtl-toggle-btn btn btn-outline btn-sm w-1/2 mr-2"><span class="rtl-label">RTL</span></button>
+        <button class="theme-toggle-btn btn btn-outline btn-sm w-1/2">
+          <i data-lucide="moon" class="icon-moon w-4 h-4 mr-1"></i> Theme
+        </button>
+      </div>
+      <a href="../dashboard/book-cleaning.html" class="btn btn-primary w-full">Book a Cleaning</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       BLOG HERO (WITH FEATURED ARTICLE THUMBNAIL)
+       ========================================================================= -->
+  <section class="py-16 lg:py-24 hero-section bg-gradient-to-b from-primary-light/40 to-background dark:from-[#172220] dark:to-[#101817] border-b border-border">
+    <div class="site-container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 animate-fade-up">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest">Home Care Journal</span>
+          <h1 class="text-4xl sm:text-5xl font-heading font-extrabold mt-3 mb-6 leading-tight">
+            Curated Wisdom for Pristine, Restorative Living
+          </h1>
+          <p class="text-base sm:text-lg text-text-muted leading-relaxed mb-6">
+            Explore professional advice on natural stone care, HEPA allergen reduction, linen hospitality standards, and room-by-room decluttering.
+          </p>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-2 border-white/40 group">
+            <img src="../assets/images/hero/blog-hero.webp" alt="Home Care Journal Featured" class="w-full h-auto object-cover hero-zoom-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 ARTICLE CARDS GRID -->
+  <section class="py-20 bg-surface dark:bg-surface-dark">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 1 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-1.webp" alt="Spring Reset" class="w-full h-full object-cover img-zoom-hover">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-primary mb-3">Deep Cleaning</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">The 50-Point Spring Reset Blueprint</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">A room-by-room guide to reaching the forgotten corners, range hoods, and baseboard trims.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Claire S. • 6 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-2.webp" alt="Natural Enzyme Care" class="w-full h-full object-cover img-zoom-hover">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-warning mb-3">Cleaning Tips</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">Natural Enzyme Care for Quartz & Marble</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">Why acidic cleaners etch fine natural stone and how pH-neutral enzymes lift stubborn grease.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By David C. • 4 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-3.webp" alt="HEPA Air Purity" class="w-full h-full object-cover img-zoom-hover">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-success mb-3">Healthy Home</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">HEPA Filtration & Indoor Air Purity</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">How 4-stage microscopic filtration traps pollen, pet dander, and dust mites effectively.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Claire S. • 5 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-4.webp" alt="Wardrobe Decluttering" class="w-full h-full object-cover img-zoom-hover">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-info mb-3">Home Organization</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">The Art of Wardrobe Decluttering</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">Creating peaceful master closets using folding methodologies and seasonal rotation.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Olivia C. • 7 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-5.webp" alt="Move-In Sanitation" class="w-full h-full object-cover img-zoom-hover">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-primary mb-3">Moving</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">Move-In Sanitation Checklist</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">Sterilizing pantry shelves, drawers, and duct vents before unpacking your belongings.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Marcus L. • 5 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-6.webp" alt="Pet Friendly Cleaning" class="w-full h-full object-cover img-zoom-hover">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-success mb-3">Healthy Home</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">Pet-Friendly Non-Toxic Cleaning</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">Safeguarding dogs and cats while effectively neutralizing pet fur odors and stains.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Sophia M. • 4 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-7.webp" alt="Hardwood Longevity" class="w-full h-full object-cover img-zoom-hover">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-warning mb-3">Housekeeping</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">Hardwood Floor Longevity Secrets</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">Avoiding moisture damage and sticky buildup on French oak and walnut flooring.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Daniel W. • 6 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-8.webp" alt="Shower Glass Lime Scale" class="w-full h-full object-cover img-zoom-hover">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-primary mb-3">Cleaning Tips</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">Shower Glass Lime-Scale Eradication</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">How citric acid and deionized water restore crystal clarity to clouded enclosures.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Claire S. • 4 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-9.webp" alt="Psychology of Clean" class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-info mb-3">Healthy Home</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">The Psychology of a Spotless Home</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">Clinical findings on how orderly physical spaces reduce cortisol and enhance focus.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Dr. Aris Thorne • 8 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-10.webp" alt="Seasonal Autumn Sanitation" class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-warning mb-3">Seasonal Cleaning</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">Seasonal Transition & Indoor Air Prep</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">Clearing HVAC intake registers, vacuuming thermal drapes, and deep upholstery aeration.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Elena R. • 5 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-11.webp" alt="Luxury Linen Care" class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-primary mb-3">Housekeeping</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">Hospitality Grade Egyptian Cotton Linen Care</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">Proper laundering temperatures, natural vinegar fabric softening, and crisp hospital folding.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Liam V. • 4 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="card-clean p-0 overflow-hidden group flex flex-col justify-between">
+          <div>
+            <div class="h-52 overflow-hidden">
+              <img src="../assets/images/blog/blog-12.webp" alt="Estate Deep Sanitization" class="w-full h-full object-cover img-zoom-hover" loading="lazy">
+            </div>
+            <div class="p-6">
+              <span class="badge badge-success mb-3">Deep Cleaning</span>
+              <h3 class="font-heading font-bold text-xl mb-2 group-hover:text-primary transition-colors">Estate Sanitization: Multi-Level Architecture</h3>
+              <p class="text-xs text-text-muted mb-4 line-clamp-2">How dedicated cleaning pairs systematically manage 5,000+ square foot residential estates.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-4 border-t border-border flex items-center justify-between">
+            <span class="text-xs text-text-muted">By Olivia C. • 6 min read</span>
+            <a href="blog-details.html" class="text-xs font-bold text-primary inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Read <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+    <!-- Global Footer -->
+  <footer class="site-footer pt-16 pb-12 bg-[#0E1514] text-white border-t border-gray-800">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-gray-800">
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="../index.html" class="inline-block mb-4">
+            <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo-footer">
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
+            Bespoke residential housekeeping and deep sanitation services designed for modern homeowners seeking calm, pristine living.
+          </p>
+          <div class="flex items-center gap-3">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="Facebook" title="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="Twitter / X" title="Twitter / X">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
+              aria-label="LinkedIn" title="LinkedIn">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="services.html" class="footer-link">Standard Cleaning</a></li>
+            <li><a href="service-details.html" class="footer-link">Deep Sanitization</a></li>
+            <li><a href="services.html" class="footer-link">Move-In / Move-Out</a></li>
+            <li><a href="services.html" class="footer-link">Kitchen Deep Clean</a></li>
+            <li><a href="services.html" class="footer-link">Recurring Housekeeping</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="about.html" class="footer-link">About PureNest</a></li>
+            <li><a href="how-it-works.html" class="footer-link">Process & Standards</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing & Plans</a></li>
+            <li><a href="coverage.html" class="footer-link">Coverage Territory</a></li>
+            <li><a href="blog.html" class="footer-link">Home Care Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-base mb-4">Concierge Support</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li class="flex items-start gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-primary mt-1"></i>
+              <span>(800) 555-PURE (7873)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-primary mt-1"></i>
+              <span>concierge@purenest.com</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-primary mt-1"></i>
+              <span>Mon–Sat: 7:00 AM – 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <div>&copy; 2026 PureNest Housekeeping Services Inc. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-gray-300">Terms of Service</a>
+          <a href="contact.html" class="hover:text-gray-300">Insurance & Bonding</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/validation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

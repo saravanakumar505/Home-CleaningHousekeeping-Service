@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureNest Documentation & Developer Manual</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+</head>
+<body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] p-6 lg:p-12">
+
+  <div class="max-w-4xl mx-auto space-y-12">
+    <!-- Header -->
+    <div class="flex items-center justify-between pb-6 border-b border-border">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-white font-bold text-xl shadow-lg">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h1 class="text-2xl lg:text-3xl font-heading font-extrabold text-primary dark:text-[#34D399]">PureNest Housekeeping Template</h1>
+          <p class="text-xs text-text-muted">Comprehensive Developer & Buyer Guide (Version 1.0.0)</p>
+        </div>
+      </div>
+      <a href="../index.html" class="btn btn-primary btn-sm"><i data-lucide="home" class="w-4 h-4"></i> Live Preview</a>
+    </div>
+
+    <!-- Section 1: Overview -->
+    <section class="card-clean p-8 space-y-4">
+      <h2 class="text-xl font-heading font-bold text-primary">1. Technology Stack & Philosophy</h2>
+      <p class="text-sm text-text-muted leading-relaxed">
+        PureNest is built purely with standard web technologies: <strong>HTML5</strong>, <strong>TailwindCSS</strong>, <strong>Vanilla JavaScript</strong>, and <strong>Lucide SVG Icons</strong>. There is zero runtime compilation, no Webpack/Vite complexity, and zero dependency on jQuery, Bootstrap, React, or Vue.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+        <div class="p-3 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs font-semibold text-center">HTML5 Semantic</div>
+        <div class="p-3 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs font-semibold text-center">Vanilla JavaScript</div>
+        <div class="p-3 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs font-semibold text-center">TailwindCSS</div>
+        <div class="p-3 rounded-xl bg-surface-alt dark:bg-[#15201E] text-xs font-semibold text-center">Lucide SVGs</div>
+      </div>
+    </section>
+
+    <!-- Section 2: Color Tokens -->
+    <section class="card-clean p-8 space-y-4">
+      <h2 class="text-xl font-heading font-bold text-primary">2. CSS Design Tokens & Variables</h2>
+      <p class="text-sm text-text-muted leading-relaxed">
+        All brand colors are parameterized in <code class="text-xs bg-surface-alt dark:bg-[#15201E] px-2 py-1 rounded">assets/css/style.css</code>:
+      </p>
+      <pre class="bg-gray-900 text-gray-100 p-4 rounded-xl text-xs overflow-x-auto">
+:root {
+  --primary: #2E8B72;       /* Teal / Emerald */
+  --primary-dark: #1E6B56;
+  --primary-light: #E8F5F0;
+  --secondary: #F2B866;     /* Warm Gold / Sand */
+  --background: #F7F8F5;    /* Warm Clean White */
+  --surface: #FFFFFF;
+  --text-main: #18211F;
+  --text-muted: #5E6D69;
+  --border: #DDE5E1;
+}</pre>
+    </section>
+
+    <!-- Section 3: Folder Hierarchy -->
+    <section class="card-clean p-8 space-y-4">
+      <h2 class="text-xl font-heading font-bold text-primary">3. Exact Folder Hierarchy</h2>
+      <pre class="bg-gray-900 text-gray-100 p-4 rounded-xl text-xs overflow-x-auto">
+Home Cleaning & Housekeeping Service/
+├── index.html                  (Home 1 - Residential Root)
+├── assets/
+│   ├── css/ (style.css, dark-mode.css, rtl.css)
+│   ├── js/  (main.js, theme.js, rtl.js, validation.js, dashboard.js, animations.js)
+│   └── images/ (hero, services, team, blog, about, cleaning, before-after, locations, dashboard)
+├── pages/
+│   ├── home2.html              (Home 2 - Editorial Care)
+│   ├── about.html, services.html, service-details.html, pricing.html, how-it-works.html
+│   ├── coverage.html, blog.html, blog-details.html, contact.html, login.html, register.html
+│   ├── 404.html, coming-soon.html
+├── dashboard/                  (10 Customer Portal Pages)
+├── admin/                      (13 Executive Operations Pages)
+├── documentation/
+├── README.md, robots.txt, sitemap.xml</pre>
+    </section>
+
+    <!-- Section 4: Key Features -->
+    <section class="card-clean p-8 space-y-4">
+      <h2 class="text-xl font-heading font-bold text-primary">4. Included Interactive Features</h2>
+      <ul class="space-y-2 text-sm text-text-muted">
+        <li>• <strong>7-Step Booking Wizard</strong>: Complete room count selector, extra add-ons, and dynamic price total calculation.</li>
+        <li>• <strong>Live GPS Tracker Simulator</strong>: Real-time 6-stage cleaner arrival progress stepper.</li>
+        <li>• <strong>Interactive Before/After Slider</strong>: Drag comparison with touch and mouse support.</li>
+        <li>• <strong>Persistent Dark Mode & RTL Engine</strong>: Zero-flash localStorage theme and layout direction synchronization.</li>
+        <li>• <strong>Zero Broken Links</strong>: All links relative to their respective directories.</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - PureNest Housekeeping</title>
+  <meta name="description" content="Sign in to your PureNest customer portal to manage bookings, track cleaner arrivals, and download invoices.">
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#2E8B72', dark: '#1E6B56', light: '#E8F5F0' },
+            secondary: { DEFAULT: '#F2B866', dark: '#D99B48', light: '#FEF7EE' },
+            surface: { DEFAULT: '#FFFFFF', alt: '#F1F4F1', dark: '#172220' },
+            background: { DEFAULT: '#F7F8F5', dark: '#101817' }
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+</head>
+<body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] antialiased flex flex-col min-h-screen justify-center items-center p-4 relative">
+
+  <!-- Floating Theme / RTL Toggles -->
+  <div class="fixed top-4 right-4 flex items-center gap-2 z-50">
+    <button class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted text-xs font-bold bg-surface dark:bg-[#172220] transition-colors" title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+    <button class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted bg-surface dark:bg-[#172220] transition-colors" title="Toggle Dark/Light Mode">
+      <i data-lucide="sun" class="icon-sun w-5 h-5" style="display:none;"></i>
+      <i data-lucide="moon" class="icon-moon w-5 h-5"></i>
+    </button>
+  </div>
+
+  <div class="w-full max-w-md">
+    <div class="text-center mb-8">
+      <a href="../index.html" class="inline-block">
+        <img src="../assets/images/logo.png" alt="PureNest Housekeeping" class="site-brand-logo logo-light mx-auto h-14">
+        <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo logo-dark mx-auto h-14">
+      </a>
+      <h1 class="text-2xl font-heading font-bold mt-4">Welcome Back</h1>
+      <p class="text-xs text-text-muted mt-1">Sign in to manage your appointments & tracking</p>
+    </div>
+
+    <div class="card-clean p-8 shadow-xl">
+      <form data-validate="true" class="space-y-4">
+        <div class="form-group mb-0">
+          <label class="form-label text-xs">Email Address *</label>
+          <input type="email" class="form-input text-sm" placeholder="sarah@example.com" value="sarah@example.com" required>
+          <span class="form-error-msg"></span>
+        </div>
+
+        <div class="form-group mb-0">
+          <div class="flex items-center justify-between mb-1">
+            <label class="form-label text-xs mb-0">Password *</label>
+            <a href="#" class="text-xs text-primary hover:underline">Forgot?</a>
+          </div>
+          <input type="password" class="form-input text-sm" placeholder="••••••••" value="password123" required>
+          <span class="form-error-msg"></span>
+        </div>
+
+        <div class="flex items-center justify-between text-xs py-1">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" checked class="rounded text-primary focus:ring-primary">
+            <span>Remember this device</span>
+          </label>
+        </div>
+
+        <a href="../dashboard/index.html" class="btn btn-primary w-full py-3">Sign In to Dashboard</a>
+      </form>
+
+      <div class="relative flex items-center justify-center my-6">
+        <div class="border-t border-border w-full"></div>
+        <span class="bg-surface dark:bg-surface-dark px-3 text-xs text-text-muted absolute">Or continue with</span>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <a href="../dashboard/index.html" class="btn btn-outline text-xs py-2.5">
+          <i data-lucide="globe" class="w-4 h-4 text-blue-500"></i> Google
+        </a>
+        <a href="../dashboard/index.html" class="btn btn-outline text-xs py-2.5">
+          <i data-lucide="apple" class="w-4 h-4"></i> Apple ID
+        </a>
+      </div>
+    </div>
+
+    <p class="text-center text-xs text-text-muted mt-6">
+      Don't have an account yet? <a href="register.html" class="font-semibold text-primary hover:underline">Create Account</a>
+    </p>
+  </div>
+
+  <script src="../assets/js/validation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

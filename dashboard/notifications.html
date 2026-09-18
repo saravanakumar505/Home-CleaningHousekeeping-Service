@@ -37,7 +37,7 @@
   <div class="dashboard-layout">
     <aside class="dashboard-sidebar p-5">
       <div class="flex flex-col gap-2 pb-6 mb-6 border-b border-border">
-        <a href="index.html" class="inline-block">
+        <a href="../index.html" class="inline-block" title="Return to PureNest Home">
           <img src="../assets/images/logo.png" alt="PureNest Housekeeping" class="site-brand-logo-sidebar logo-light">
           <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo-sidebar logo-dark">
         </a>
@@ -54,17 +54,22 @@
         <a href="notifications.html" class="dashboard-nav-item active"><i data-lucide="bell" class="w-5 h-5"></i> Notifications</a>
         <a href="settings.html" class="dashboard-nav-item"><i data-lucide="settings" class="w-5 h-5"></i> Settings</a>
       </nav>
-      <div class="pt-4 border-t border-border space-y-2">
-        <a href="../index.html" class="dashboard-nav-item text-xs text-text-muted"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Website</a>
+      <div class="pt-4 border-t border-border">
+        <a href="../pages/login.html" class="dashboard-nav-item text-xs text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950"><i data-lucide="log-out" class="w-4 h-4"></i> Log Out</a>
       </div>
     </aside>
 
     <!-- Main Content -->
-    <main class="dashboard-main p-6 lg:p-8">
+    <main class="dashboard-main p-4 sm:p-6 lg:p-6 xl:p-8">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-8 border-b border-border">
-        <div>
-          <h1 class="text-2xl lg:text-3xl font-heading font-extrabold">Notifications & Alerts</h1>
-          <p class="text-xs text-text-muted mt-1">Real-time status updates on cleaner assignments, arrival times, and receipts</p>
+        <div class="flex items-center gap-3">
+          <button class="dashboard-sidebar-toggle lg:hidden p-2 rounded-lg border border-border text-text-main hover:text-primary" aria-label="Toggle Dashboard Navigation">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+          <div>
+            <h1 class="text-xl sm:text-2xl lg:text-3xl font-heading font-extrabold">Notifications & Alerts</h1>
+            <p class="text-xs text-text-muted mt-1">Real-time status updates on cleaner assignments, arrival times, and receipts</p>
+          </div>
         </div>
         <div class="flex items-center gap-3">
           <button class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted text-xs font-bold transition-colors" title="Toggle RTL"><span class="rtl-label">RTL</span></button>

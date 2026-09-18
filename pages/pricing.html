@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pricing & Plans - PureNest Housekeeping</title>
-  <meta name="description" content="Transparent residential cleaning pricing. Explore flat-rate one-time packages, recurring discounts, and our interactive estimate calculator.">
+  <meta name="description"
+    content="Transparent residential cleaning pricing. Explore flat-rate one-time packages, recurring discounts, and our interactive estimate calculator.">
   <link rel="canonical" href="https://purenest.example.com/pages/pricing.html">
   <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
   <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
@@ -37,6 +39,7 @@
   <script src="../assets/js/theme.js"></script>
   <script src="../assets/js/rtl.js"></script>
 </head>
+
 <body class="bg-background text-[#18211F] dark:text-[#F4F7F5] dark:bg-[#101817] antialiased flex flex-col min-h-screen">
 
   <!-- Global Header -->
@@ -53,8 +56,10 @@
             Home <i data-lucide="chevron-down" class="w-4 h-4"></i>
           </button>
           <div class="dropdown-menu">
-            <a href="../index.html" class="dropdown-item"><i data-lucide="home" class="w-4 h-4 text-primary"></i> Home 1 (Residential)</a>
-            <a href="home2.html" class="dropdown-item"><i data-lucide="layout-grid" class="w-4 h-4 text-secondary"></i> Home 2 (Editorial Care)</a>
+            <a href="../index.html" class="dropdown-item"><i data-lucide="home" class="w-4 h-4 text-primary"></i> Home 1
+              (Residential)</a>
+            <a href="home2.html" class="dropdown-item"><i data-lucide="layout-grid" class="w-4 h-4 text-secondary"></i>
+              Home 2 (Editorial Care)</a>
           </div>
         </div>
 
@@ -71,23 +76,31 @@
             Dashboard <i data-lucide="chevron-down" class="w-4 h-4"></i>
           </button>
           <div class="dropdown-menu">
-            <a href="../dashboard/index.html" class="dropdown-item"><i data-lucide="user" class="w-4 h-4 text-primary"></i> Customer Portal</a>
-            <a href="../admin/index.html" class="dropdown-item"><i data-lucide="shield-check" class="w-4 h-4 text-secondary"></i> Admin Console</a>
+            <a href="../dashboard/index.html" class="dropdown-item"><i data-lucide="user"
+                class="w-4 h-4 text-primary"></i> Customer Portal</a>
+            <a href="../admin/index.html" class="dropdown-item"><i data-lucide="shield-check"
+                class="w-4 h-4 text-secondary"></i> Admin Console</a>
           </div>
         </div>
       </nav>
 
       <div class="hidden lg:flex items-center gap-3">
-        <button class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors text-xs font-bold" title="Toggle RTL"><span class="rtl-label">RTL</span></button>
-        <button class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors" title="Toggle Dark/Light Mode">
+        <button
+          class="rtl-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors text-xs font-bold"
+          title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+        <button
+          class="theme-toggle-btn p-2 rounded-lg border border-border hover:border-primary text-text-muted hover:text-primary transition-colors"
+          title="Toggle Dark/Light Mode">
           <i data-lucide="sun" class="icon-sun w-5 h-5" style="display:none;"></i>
           <i data-lucide="moon" class="icon-moon w-5 h-5"></i>
         </button>
         <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
-        <a href="../dashboard/book-cleaning.html" class="btn btn-primary btn-sm"><i data-lucide="calendar" class="w-4 h-4"></i> Book Now</a>
+        <a href="../dashboard/book-cleaning.html" class="btn btn-primary btn-sm"><i data-lucide="calendar"
+            class="w-4 h-4"></i> Book Now</a>
       </div>
 
-      <button class="mobile-menu-toggle lg:hidden p-2 rounded-lg border border-border text-text-main hover:text-primary" aria-label="Open Navigation Menu">
+      <button class="mobile-menu-toggle lg:hidden p-2 rounded-lg border border-border text-text-main hover:text-primary"
+        aria-label="Open Navigation Menu">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
@@ -98,7 +111,8 @@
   <aside class="mobile-drawer p-6">
     <div class="flex items-center justify-between pb-4 border-b border-border">
       <div class="flex items-center gap-2">
-        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white"><i data-lucide="sparkles"
+            class="w-4 h-4"></i></div>
         <span class="font-heading font-bold text-lg text-primary">PureNest</span>
       </div>
       <button class="mobile-drawer-close p-2 text-text-muted"><i data-lucide="x" class="w-6 h-6"></i></button>
@@ -125,14 +139,18 @@
           <i data-lucide="moon" class="icon-moon w-4 h-4 mr-1"></i> Theme
         </button>
       </div>
-      <a href="../dashboard/book-cleaning.html" class="btn btn-primary w-full">Book a Cleaning</a>
+      <div class="grid grid-cols-2 gap-2">
+        <a href="login.html" class="btn btn-outline min-h-[44px] w-full text-center flex items-center justify-center">Sign In</a>
+        <a href="../dashboard/book-cleaning.html" class="btn btn-primary min-h-[44px] w-full text-center flex items-center justify-center">Book Now</a>
+      </div>
     </div>
   </aside>
 
   <!-- =========================================================================
        PRICING HERO (WITH MODERN BRIGHT HOME IMAGE)
        ========================================================================= -->
-  <section class="py-16 lg:py-24 hero-section bg-gradient-to-b from-primary-light/40 to-background dark:from-[#172220] dark:to-[#101817] border-b border-border">
+  <section
+    class="py-16 lg:py-24 hero-section bg-gradient-to-b from-primary-light/40 to-background dark:from-[#172220] dark:to-[#101817] border-b border-border">
     <div class="site-container">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7 animate-fade-up">
@@ -141,7 +159,8 @@
             Transparent, Honest Residential Rates
           </h1>
           <p class="text-base sm:text-lg text-text-muted leading-relaxed mb-6">
-            Zero hidden travel fees, supplies surcharges, or surprises. What you see is what you invest in your home's peace of mind.
+            Zero hidden travel fees, supplies surcharges, or surprises. What you see is what you invest in your home's
+            peace of mind.
           </p>
           <div class="flex flex-wrap gap-4">
             <a href="../dashboard/book-cleaning.html" class="btn btn-primary btn-lg">Book Instant Clean</a>
@@ -150,7 +169,8 @@
         </div>
         <div class="lg:col-span-5">
           <div class="rounded-3xl overflow-hidden shadow-2xl border-2 border-white/40 group">
-            <img src="../assets/images/hero/pricing-hero.webp" alt="Bright Clean Home" class="w-full h-auto object-cover hero-zoom-img">
+            <img src="../assets/images/hero/pricing-hero.webp" alt="Bright Clean Home"
+              class="w-full h-auto object-cover hero-zoom-img">
           </div>
         </div>
       </div>
@@ -167,36 +187,79 @@
             <span class="badge badge-primary mb-3">Routine Care</span>
             <h3 class="font-heading font-bold text-2xl mb-1">Standard Clean</h3>
             <p class="text-xs text-text-muted mb-6">Recurring or single refresh for tidy homes</p>
-            <div class="text-4xl font-heading font-extrabold text-primary mb-6">$95 <span class="text-xs font-normal text-text-muted">/ base rate</span></div>
+            <div class="text-4xl font-heading font-extrabold text-primary mb-6">$95 <span
+                class="text-xs font-normal text-text-muted">/ base rate</span></div>
             <ul class="space-y-3 text-sm text-text-muted mb-8">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> High-touch surface dusting</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Hardwood vacuum & mop</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Bathroom vanity sanitization</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Kitchen counters & sink</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> High-touch
+                surface dusting</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Hardwood
+                vacuum & mop</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Bathroom
+                vanity sanitization</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Kitchen
+                counters & sink</li>
             </ul>
           </div>
           <a href="../dashboard/book-cleaning.html" class="btn btn-outline w-full">Book Standard Clean</a>
         </div>
 
         <!-- 2. Deep Sanitization Reset -->
-        <div class="card-clean p-8 flex flex-col justify-between border-2 border-primary shadow-2xl relative">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-secondary text-[#18211F] text-xs font-bold uppercase tracking-wider py-1 px-4 rounded-full shadow">
+        <div
+          class="card-clean p-8 flex flex-col justify-between border-2 border-primary shadow-2xl relative overflow-visible">
+
+          <div
+            class="absolute -top-3.5 left-1/2 -translate-x-1/2 z-20 bg-secondary text-[#18211F] text-xs font-bold uppercase tracking-wider py-1 px-4 rounded-full shadow whitespace-nowrap">
             Top Recommendation
           </div>
+
           <div>
             <span class="badge badge-warning mb-3">Intensive Reset</span>
-            <h3 class="font-heading font-bold text-2xl mb-1">Deep Sanitization</h3>
-            <p class="text-xs text-text-muted mb-6">Complete top-to-bottom architectural scrub</p>
-            <div class="text-4xl font-heading font-extrabold text-primary mb-6">$165 <span class="text-xs font-normal text-text-muted">/ base rate</span></div>
+
+            <h3 class="font-heading font-bold text-2xl mb-1">
+              Deep Sanitization
+            </h3>
+
+            <p class="text-xs text-text-muted mb-6">
+              Complete top-to-bottom architectural scrub
+            </p>
+
+            <div class="text-4xl font-heading font-extrabold text-primary mb-6">
+              $165
+              <span class="text-xs font-normal text-text-muted">/ base rate</span>
+            </div>
+
             <ul class="space-y-3 text-sm text-text-muted mb-8">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Everything in Standard Clean</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Baseboards & crown molding scrub</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Bathroom lime-scale & grout steam</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Range hood degreasing</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 50-point audit inspection report</li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-primary"></i>
+                Everything in Standard Clean
+              </li>
+
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-primary"></i>
+                Baseboards & crown molding scrub
+              </li>
+
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-primary"></i>
+                Bathroom lime-scale & grout steam
+              </li>
+
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-primary"></i>
+                Range hood degreasing
+              </li>
+
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-primary"></i>
+                50-point audit inspection report
+              </li>
             </ul>
           </div>
-          <a href="../dashboard/book-cleaning.html" class="btn btn-primary w-full">Book Deep Clean</a>
+
+          <a href="../dashboard/book-cleaning.html" class="btn btn-primary w-full">
+            Book Deep Clean
+          </a>
+
         </div>
 
         <!-- 3. Move-In / Move-Out Turnover -->
@@ -205,12 +268,17 @@
             <span class="badge badge-success mb-3">Relocation</span>
             <h3 class="font-heading font-bold text-2xl mb-1">Move-In / Move-Out</h3>
             <p class="text-xs text-text-muted mb-6">Deposit-guaranteed empty home turnover</p>
-            <div class="text-4xl font-heading font-extrabold text-primary mb-6">$195 <span class="text-xs font-normal text-text-muted">/ base rate</span></div>
+            <div class="text-4xl font-heading font-extrabold text-primary mb-6">$195 <span
+                class="text-xs font-normal text-text-muted">/ base rate</span></div>
             <ul class="space-y-3 text-sm text-text-muted mb-8">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Everything in Deep Clean</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Inside refrigerator & oven scrub</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Inside all empty cabinets & drawers</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 100% deposit return guarantee</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Everything in
+                Deep Clean</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Inside
+                refrigerator & oven scrub</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Inside all
+                empty cabinets & drawers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 100% deposit
+                return guarantee</li>
             </ul>
           </div>
           <a href="../dashboard/book-cleaning.html" class="btn btn-outline w-full">Book Move Clean</a>
@@ -219,33 +287,326 @@
     </div>
   </section>
 
-  <!-- 100% SATISFACTION GUARANTEE & ECO BANNER -->
-  <section class="py-16 bg-surface dark:bg-surface-dark border-t border-border">
+  <!-- =========================================================
+     ZERO-RISK PROMISE / 24-HOUR RE-CLEAN GUARANTEE
+     ========================================================= -->
+
+  <section class="py-16 lg:py-20 bg-surface dark:bg-surface-dark border-t border-border">
+
     <div class="site-container">
-      <div class="card-clean p-8 lg:p-12 border-2 border-primary bg-gradient-to-r from-primary-light/40 to-secondary-light/30 dark:from-[#152320] dark:to-[#1a2622]">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          <div class="md:col-span-3 text-center">
-            <img src="../assets/images/general/guarantee-seal.webp" alt="100% PureNest Satisfaction Guarantee Seal" class="w-36 h-36 mx-auto object-contain drop-shadow-xl" loading="lazy">
-          </div>
-          <div class="md:col-span-6">
-            <span class="badge badge-primary mb-2">Zero-Risk Promise</span>
-            <h3 class="text-2xl font-heading font-extrabold mb-3">Our 24-Hour Re-Clean Guarantee</h3>
-            <p class="text-sm text-text-muted leading-relaxed mb-4">
-              If any corner or surface fails to meet our 50-point audit standard, simply notify your concierge within 24 hours. A supervisor will return to re-clean the area free of charge.
-            </p>
-            <div class="flex items-center gap-4 text-xs font-bold text-primary">
-              <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4"></i> Fully Bonded & Insured</span>
-              <span class="flex items-center gap-1.5"><i data-lucide="award" class="w-4 h-4"></i> Clinical-Grade Disinfection</span>
-            </div>
-          </div>
-          <div class="md:col-span-3 text-center border-t md:border-t-0 md:border-l border-border pt-6 md:pt-0 md:pl-6">
-            <img src="../assets/images/general/eco-cert.webp" alt="Eco Bio-Safe Certified Cleaning Formula" class="w-24 h-24 mx-auto object-contain mb-3" loading="lazy">
-            <div class="text-xs font-bold text-emerald-600">100% Botanical Bio-Safe</div>
-            <p class="text-[11px] text-text-muted mt-1">Pet-friendly & asthma safe</p>
-          </div>
+
+      <div
+        class="relative overflow-hidden rounded-[2rem] border border-primary/20 dark:border-primary/30 bg-gradient-to-br from-primary-light via-white to-secondary-light dark:from-[#12251f] dark:via-[#172220] dark:to-[#20251d] shadow-xl">
+
+        <!-- Decorative Background Elements -->
+        <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-primary/10 blur-3xl pointer-events-none">
         </div>
+
+        <div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-secondary/10 blur-3xl pointer-events-none">
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-4 p-7 sm:p-10 lg:p-12">
+
+
+          <!-- =====================================================
+             LEFT CONTENT
+             ===================================================== -->
+
+          <div class="lg:col-span-5">
+
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center gap-2 rounded-full bg-primary/10 dark:bg-primary/20 border border-primary/20 px-4 py-2 mb-5">
+
+              <i data-lucide="shield-check" class="w-4 h-4 text-primary">
+              </i>
+
+              <span class="text-xs font-bold uppercase tracking-wider text-primary">
+
+                Zero-Risk Promise
+
+              </span>
+
+            </div>
+
+
+            <!-- Heading -->
+            <h3 class="text-3xl sm:text-4xl lg:text-[2.7rem] font-heading font-extrabold leading-tight mb-4">
+
+              Our
+              <span class="text-primary">
+                24-Hour
+              </span>
+              <br class="hidden sm:block">
+              Re-Clean Guarantee
+
+            </h3>
+
+
+            <!-- Supporting Text -->
+            <p class="text-sm sm:text-base text-text-muted leading-relaxed max-w-xl mb-7">
+
+              Your satisfaction is our priority. If you are not completely
+              satisfied with your cleaning service, simply notify your
+              concierge within 24 hours and a supervisor will return to
+              re-clean the area free of charge.
+
+            </p>
+
+
+            <!-- Trust Points -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+              <!-- Bonded -->
+              <div
+                class="flex items-center gap-3 rounded-2xl bg-white/70 dark:bg-white/5 border border-primary/10 dark:border-white/10 p-3">
+
+                <div
+                  class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
+
+                  <i data-lucide="shield-check" class="w-5 h-5 text-primary">
+                  </i>
+
+                </div>
+
+                <div>
+
+                  <p class="text-xs font-bold text-[#18211F] dark:text-white">
+
+                    Fully Bonded & Insured
+
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <!-- Clinical -->
+              <div
+                class="flex items-center gap-3 rounded-2xl bg-white/70 dark:bg-white/5 border border-primary/10 dark:border-white/10 p-3">
+
+                <div class="w-10 h-10 shrink-0 rounded-xl bg-secondary/20 flex items-center justify-center">
+
+                  <i data-lucide="sparkles" class="w-5 h-5 text-secondary-dark dark:text-secondary">
+                  </i>
+
+                </div>
+
+                <div>
+
+                  <p class="text-xs font-bold text-[#18211F] dark:text-white">
+
+                    Clinical-Grade Disinfection
+
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =====================================================
+             CENTER GUARANTEE BADGE
+             ===================================================== -->
+
+          <div class="lg:col-span-3 flex justify-center order-first lg:order-none">
+
+            <div class="relative">
+
+              <!-- Outer Ring -->
+              <div
+                class="absolute inset-[-14px] rounded-full border-2 border-dashed border-secondary/50 animate-[spin_20s_linear_infinite]">
+              </div>
+
+
+              <!-- Guarantee Circle -->
+              <div
+                class="relative w-52 h-52 sm:w-60 sm:h-60 rounded-full bg-gradient-to-br from-primary-dark to-primary flex items-center justify-center shadow-2xl">
+
+                <!-- Inner Circle -->
+                <div
+                  class="w-44 h-44 sm:w-52 sm:h-52 rounded-full border-4 border-white/30 flex flex-col items-center justify-center text-white text-center">
+
+                  <i data-lucide="shield-check" class="w-10 h-10 mb-2 text-secondary">
+                  </i>
+
+                  <span class="text-5xl sm:text-6xl font-heading font-extrabold leading-none">
+
+                    24
+
+                  </span>
+
+                  <span class="text-sm sm:text-base font-bold tracking-[0.2em] uppercase mt-1">
+
+                    Hours
+
+                  </span>
+
+                  <span class="text-[10px] font-bold uppercase tracking-widest mt-2 text-white/80">
+
+                    Re-Clean Guarantee
+
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <!-- Gold Ribbon -->
+              <div class="absolute left-1/2 -translate-x-1/2 -bottom-5 whitespace-nowrap">
+
+                <div class="relative bg-secondary text-[#18211F] px-7 py-2.5 rounded-full shadow-lg">
+
+                  <span class="text-xs sm:text-sm font-heading font-extrabold uppercase tracking-wider">
+
+                    Satisfaction Guaranteed
+
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =====================================================
+             RIGHT VISUAL / PROCESS
+             ===================================================== -->
+
+          <div class="lg:col-span-4">
+
+            <div
+              class="relative rounded-[1.75rem] overflow-hidden bg-[#0E1514] min-h-[280px] sm:min-h-[320px] flex items-center justify-center">
+
+              <!-- Decorative Glow -->
+              <div class="absolute top-[-40px] right-[-40px] w-40 h-40 rounded-full bg-primary/30 blur-3xl">
+              </div>
+
+              <div class="absolute bottom-[-50px] left-[-40px] w-40 h-40 rounded-full bg-secondary/20 blur-3xl">
+              </div>
+
+
+              <!-- Visual -->
+              <div class="relative z-10 text-center px-6 py-8">
+
+                <!-- Cleaning Icon -->
+                <div
+                  class="mx-auto w-20 h-20 rounded-3xl bg-white/10 border border-white/10 flex items-center justify-center mb-5">
+
+                  <i data-lucide="sparkles" class="w-10 h-10 text-secondary">
+                  </i>
+
+                </div>
+
+
+                <h4 class="text-xl sm:text-2xl font-heading font-extrabold text-white mb-2">
+
+                  Your Satisfaction
+
+                </h4>
+
+
+                <p class="text-sm text-white/70 mb-7">
+
+                  Our Priority
+
+                </p>
+
+
+                <!-- Process -->
+                <div class="flex items-center justify-center gap-2 sm:gap-3">
+
+                  <!-- Step 1 -->
+                  <div class="text-center">
+
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mx-auto mb-2">
+
+                      <i data-lucide="headset" class="w-4 h-4 text-white">
+                      </i>
+
+                    </div>
+
+                    <span class="text-[10px] font-semibold text-white/70">
+
+                      Notify
+
+                    </span>
+
+                  </div>
+
+
+                  <!-- Arrow -->
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-secondary">
+                  </i>
+
+
+                  <!-- Step 2 -->
+                  <div class="text-center">
+
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mx-auto mb-2">
+
+                      <i data-lucide="user-check" class="w-4 h-4 text-white">
+                      </i>
+
+                    </div>
+
+                    <span class="text-[10px] font-semibold text-white/70">
+
+                      Supervisor
+
+                    </span>
+
+                  </div>
+
+
+                  <!-- Arrow -->
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-secondary">
+                  </i>
+
+
+                  <!-- Step 3 -->
+                  <div class="text-center">
+
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mx-auto mb-2">
+
+                      <i data-lucide="sparkles" class="w-4 h-4 text-white">
+                      </i>
+
+                    </div>
+
+                    <span class="text-[10px] font-semibold text-white/70">
+
+                      Re-Clean
+
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- Global Footer -->
@@ -258,28 +619,32 @@
             <img src="../assets/images/logo-white.png" alt="PureNest Housekeeping" class="site-brand-logo-footer">
           </a>
           <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
-            Bespoke residential housekeeping and deep sanitation services designed for modern homeowners seeking calm, pristine living.
+            Bespoke residential housekeeping and deep sanitation services designed for modern homeowners seeking calm,
+            pristine living.
           </p>
           <div class="flex items-center gap-3">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
               class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
               aria-label="Facebook" title="Facebook">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
               </svg>
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
               class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
               aria-label="Twitter / X" title="Twitter / X">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
               class="w-9 h-9 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-sm"
               aria-label="LinkedIn" title="LinkedIn">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
               </svg>
             </a>
           </div>
@@ -344,4 +709,5 @@
   <script src="../assets/js/validation.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
+
 </html>

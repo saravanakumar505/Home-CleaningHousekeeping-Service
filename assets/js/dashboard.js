@@ -8,6 +8,7 @@
     initCleanerTracker();
     initTableSearchAndFilter();
     initStarRating();
+    initDashboardSidebarToggle();
   });
 
   /* --------------------------------------------------------------------------
@@ -303,6 +304,49 @@
           });
         });
       });
+    });
+  }
+
+  /* --------------------------------------------------------------------------
+     5. DASHBOARD RESPONSIVE MOBILE SIDEBAR TOGGLE (< 1024px)
+     -------------------------------------------------------------------------- */
+  function initDashboardSidebarToggle() {
+    const toggleBtns = document.querySelectorAll('.dashboard-sidebar-toggle');
+    const sidebar = document.querySelector('.dashboard-sidebar');
+    if (!sidebar) return;
+
+    let overlay = document.querySelector('.dashboard-sidebar-overlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.className = 'dashboard-sidebar-overlay';
+      document.body.appendChild(overlay);
+    }
+
+    function toggleSidebar(e) {
+      if (e) e.stopPropagation();
+      sidebar.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+    }
+
+    function closeSidebar() {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    toggleBtns.forEach(btn => btn.addEventListener('click', toggleSidebar));
+    overlay.addEventListener('click', closeSidebar);
+
+    // Auto close sidebar if window resized to >= 1024px
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (window.innerWidth >= 1024 && sidebar.classList.contains('active')) {
+          closeSidebar();
+        }
+      }, 100);
     });
   }
 
